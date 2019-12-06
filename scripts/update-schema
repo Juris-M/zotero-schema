@@ -8,6 +8,18 @@
 const path = require('path');
 const fs = require('fs');
 
+function getArrayObject(arr, label, val, ignoreEmpty) {
+    for (var info of arr) {
+        if (info[label] === val) {
+            return info;
+        }
+    }
+    if (ignoreEmpty) {
+        return false;
+    }
+    throw new Error("Array does not contain object with value " + val + " for key " + label);
+}
+
 async function run() {
 	var clientDir = path.join(__dirname, '..', '..', '..', '..');
 	if (!fs.existsSync(path.join(clientDir, 'chrome'))) {
@@ -15,11 +27,114 @@ async function run() {
 		process.exitCode = 1;
 		return;
 	}
-	
+
 	var oldJSON = fs.readFileSync('schema.json').toString();
 	var data = JSON.parse(oldJSON);
 	var version = parseInt(data.version);
+
+if (opts
+applyJurismPatches(oldJSON)
+
+    var patchJSON = fs.readFileSync('schema-jurism-patch.json').toString();
+    var patch = JSON.parse(patchJSON);
 	
+// Apply Jurism changes
+    
+    // Types
+    for (var type in patch.TYPES) {
+        // Clone type base onto type in itemTypes
+        if (!getArrayObject(data.itemTypes, "itemType", type, true)) {
+            var base = patch.TYPES[type];
+            var itemTypeInfo = getArrayObject(data.itemTypes, "itemType", base);
+            var clone = JSON.parse(JSON.stringify(itemTypeInfo));
+            clone.itemType = type;
+            data.itemTypes.push(clone);
+        }
+        // Add type entry
+        //data.csl.types[type] = [ type ];
+    }
+	console.log("HEY\n" + JSON.stringify(data.csl.types, null, 2));
+    // Creators
+    for (var itemType in patch.CREATORS) {
+        for (var creatorType of patch.CREATORS[itemType]) {
+            var info = getArrayObject(data.itemTypes, "itemType", itemType);
+            if (!getArrayObject(info.creatorTypes, "creatorType", creatorType, true)) {
+                info.creatorTypes.push({
+                    creatorType: creatorType
+                });
+            }
+        }
+    }
+    // Fields
+	// Check for baseField as vanilla field on info.fields, and remove if present
+	// (if left in place, the cross-duplicate will cause a test failure)
+	// Also check for field on info.fields, and replace with patch object if present
+	// (some fields [like institution] have base field assignments that need to be removed)
+
+    for (var itemType in patch.FIELDS) {
+        var info = getArrayObject(data.itemTypes, "itemType", itemType);
+        for (var field of patch.FIELDS[itemType]) {
+			if (field.baseField && getArrayObject(info.fields, "field", field.baseField, true)) {
+				var existingField = getArrayObject(info.fields, "field", field.baseField);
+				Object.assign(existingField, field);
+			} else if (field.field && getArrayObject(info.fields, "field", field.field, true)) {
+				var existingField = getArrayObject(info.fields, "field", field.field);
+									console.log("HELLO!");
+				for (var key in existingField) {
+					delete existingField[key];
+					Object.assign(existingField, field);
+					console.log(itemType+": "+JSON.stringify(existingField))
+				}
+			} else {
+				if (!getArrayObject(info.fields, "field", field.field, true)) {
+            		info.fields.push(field);
+            	}
+			}
+        }
+    }
+    // Dates
+    var dateAcc = {};
+	for (var itemType in patch.DATES) {
+        var info = getArrayObject(data.itemTypes, "itemType", itemType);
+        for (var field of patch.DATES[itemType]) {
+            dateAcc[itemType] = true;
+            if (!getArrayObject(info.fields, "field", field, true)) {
+                info.fields.push({
+                    field: field
+                });
+            }
+        }
+    }
+    // Meta
+    for (var date in dateAcc) {
+        if (!data.meta.fields[date]) {
+            data.meta.fields[date] = {
+                type: "date"
+            }
+        }
+    }
+    // Sort
+    for (var info of data.itemTypes) {
+        var itemType = info.itemType;
+        var fields = info.fields;
+        var positions = {};
+        for (var i in patch.SEQUENCE[itemType]) {
+            var field = patch.SEQUENCE[itemType][i];
+            positions[field] = parseInt(i, 10);
+        }
+        fields.sort(function(a,b){
+            var aPos = positions[a.field];
+            var bPos = positions[b.field];
+            if (aPos > bPos) {
+                return 1;
+            } else if (aPos < bPos) {
+                return -1;
+            } else {
+                return 0;
+            }
+        })
+    }
+    
 	// Sort item types
 	data.itemTypes.sort((a, b) => {
 		return a.itemType.localeCompare(b.itemType);
@@ -69,13 +184,13 @@ async function run() {
 		data.locales[locale].creatorTypes = getLocalizedStrings(locale, strings, 'creatorTypes', creatorTypes);
 	}
 	
-	// Write new file with incremented version
+	// Write new file with adjusted version
 	var newJSON = JSON.stringify(data, null, '\t') + "\n";
 	if (oldJSON != newJSON) {
 		console.log("Schema updated");
 		data.version = version + 1;
 		newJSON = JSON.stringify(data, null, '\t') + "\n"
-		fs.writeFileSync('schema.json', newJSON);
+		fs.writeFileSync('schema-jurism.json', newJSON);
 	}
 	else {
 		console.log("Schema hasn't changed");
