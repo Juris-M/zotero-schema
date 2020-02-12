@@ -3121,34 +3121,31 @@
 			"filingDate": {
 				"type": "date"
 			},
-			"conferencePaper": {
+			"conferenceDate": {
 				"type": "date"
 			},
-			"newspaperArticle": {
+			"newsCaseDate": {
 				"type": "date"
 			},
-			"patent": {
+			"priorityDate": {
 				"type": "date"
 			},
-			"case": {
+			"publicationDate": {
 				"type": "date"
 			},
-			"statute": {
+			"originalDate": {
 				"type": "date"
 			},
-			"audioRecording": {
+			"dateAmended": {
 				"type": "date"
 			},
-			"podcast": {
+			"openingDate": {
 				"type": "date"
 			},
-			"gazette": {
+			"adoptionDate": {
 				"type": "date"
 			},
-			"regulation": {
-				"type": "date"
-			},
-			"treaty": {
+			"signingDate": {
 				"type": "date"
 			}
 		}

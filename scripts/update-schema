@@ -95,7 +95,7 @@ async function run() {
         console.log("Patching DATES");
         var info = getArrayObject(data.itemTypes, "itemType", itemType);
         for (var field of patch.DATES[itemType]) {
-            dateAcc[itemType] = true;
+            dateAcc[field] = true;
             if (!getArrayObject(info.fields, "field", field, true)) {
                 info.fields.push({
                     field: field
