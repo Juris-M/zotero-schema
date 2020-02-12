@@ -17,7 +17,7 @@ function getArrayObject(arr, label, val, ignoreEmpty) {
     if (ignoreEmpty) {
         return false;
     }
-    throw new Error("Array does not contain object with value " + val + " for key " + label);
+    throw new Error("Array does not contain object with value \"" + val + "\" for key " + label);
 }
 
 async function run() {
@@ -32,9 +32,6 @@ async function run() {
 	var data = JSON.parse(oldJSON);
 	var version = parseInt(data.version);
 
-if (opts
-applyJurismPatches(oldJSON)
-
     var patchJSON = fs.readFileSync('schema-jurism-patch.json').toString();
     var patch = JSON.parse(patchJSON);
 	
@@ -42,10 +39,11 @@ applyJurismPatches(oldJSON)
     
     // Types
     for (var type in patch.TYPES) {
+        console.log("Patching TYPES");
         // Clone type base onto type in itemTypes
         if (!getArrayObject(data.itemTypes, "itemType", type, true)) {
             var base = patch.TYPES[type];
-            var itemTypeInfo = getArrayObject(data.itemTypes, "itemType", base);
+            var itemTypeInfo = getArrayObject(data.itemTypes, "itemType", base.zotero);
             var clone = JSON.parse(JSON.stringify(itemTypeInfo));
             clone.itemType = type;
             data.itemTypes.push(clone);
@@ -53,9 +51,9 @@ applyJurismPatches(oldJSON)
         // Add type entry
         //data.csl.types[type] = [ type ];
     }
-	console.log("HEY\n" + JSON.stringify(data.csl.types, null, 2));
     // Creators
     for (var itemType in patch.CREATORS) {
+        console.log("Patching CREATORS");
         for (var creatorType of patch.CREATORS[itemType]) {
             var info = getArrayObject(data.itemTypes, "itemType", itemType);
             if (!getArrayObject(info.creatorTypes, "creatorType", creatorType, true)) {
@@ -72,6 +70,7 @@ applyJurismPatches(oldJSON)
 	// (some fields [like institution] have base field assignments that need to be removed)
 
     for (var itemType in patch.FIELDS) {
+        console.log("Patching FIELDS");
         var info = getArrayObject(data.itemTypes, "itemType", itemType);
         for (var field of patch.FIELDS[itemType]) {
 			if (field.baseField && getArrayObject(info.fields, "field", field.baseField, true)) {
@@ -79,11 +78,9 @@ applyJurismPatches(oldJSON)
 				Object.assign(existingField, field);
 			} else if (field.field && getArrayObject(info.fields, "field", field.field, true)) {
 				var existingField = getArrayObject(info.fields, "field", field.field);
-									console.log("HELLO!");
 				for (var key in existingField) {
 					delete existingField[key];
 					Object.assign(existingField, field);
-					console.log(itemType+": "+JSON.stringify(existingField))
 				}
 			} else {
 				if (!getArrayObject(info.fields, "field", field.field, true)) {
@@ -95,6 +92,7 @@ applyJurismPatches(oldJSON)
     // Dates
     var dateAcc = {};
 	for (var itemType in patch.DATES) {
+        console.log("Patching DATES");
         var info = getArrayObject(data.itemTypes, "itemType", itemType);
         for (var field of patch.DATES[itemType]) {
             dateAcc[itemType] = true;
