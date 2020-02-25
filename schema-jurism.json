@@ -1,5 +1,5 @@
 {
-	"version": 7,
+	"version": 8,
 	"itemTypes": [
 		{
 			"itemType": "artwork",
@@ -186,16 +186,59 @@
 					"field": "title"
 				},
 				{
+					"field": "reporter",
+					"baseField": "publicationTitle"
+				},
+				{
+					"field": "billNumber",
+					"baseField": "number"
+				},
+				{
+					"field": "code"
+				},
+				{
+					"field": "codeVolume",
+					"baseField": "volume"
+				},
+				{
+					"field": "section"
+				},
+				{
+					"field": "codePages",
+					"baseField": "pages"
+				},
+				{
+					"field": "legislativeBody"
+				},
+				{
+					"field": "session"
+				},
+				{
+					"field": "history"
+				},
+				{
+					"field": "date"
+				},
+				{
 					"field": "abstractNote"
 				},
 				{
-					"field": "jurisdiction"
+					"field": "url"
+				},
+				{
+					"field": "accessDate"
 				},
 				{
 					"field": "shortTitle"
 				},
 				{
-					"field": "legislativeBody"
+					"field": "rights"
+				},
+				{
+					"field": "extra"
+				},
+				{
+					"field": "jurisdiction"
 				},
 				{
 					"field": "resolutionLabel"
@@ -209,53 +252,10 @@
 					"baseField": "type"
 				},
 				{
-					"field": "session"
-				},
-				{
-					"field": "billNumber",
-					"baseField": "number"
-				},
-				{
-					"field": "date"
-				},
-				{
-					"field": "section"
-				},
-				{
 					"field": "archiveLocation"
 				},
 				{
-					"field": "code"
-				},
-				{
-					"field": "codeVolume",
-					"baseField": "volume"
-				},
-				{
-					"field": "codePages",
-					"baseField": "pages"
-				},
-				{
 					"field": "language"
-				},
-				{
-					"field": "url"
-				},
-				{
-					"field": "accessDate"
-				},
-				{
-					"field": "history"
-				},
-				{
-					"field": "rights"
-				},
-				{
-					"field": "extra"
-				},
-				{
-					"field": "reporter",
-					"baseField": "publicationTitle"
 				}
 			],
 			"creatorTypes": [
@@ -1400,6 +1400,9 @@
 					"field": "shortTitle"
 				},
 				{
+					"field": "meetingName"
+				},
+				{
 					"field": "committee"
 				},
 				{
@@ -1467,9 +1470,6 @@
 				},
 				{
 					"field": "extra"
-				},
-				{
-					"field": "meetingName"
 				}
 			],
 			"creatorTypes": [
@@ -2823,6 +2823,9 @@
 					"field": "signingDate"
 				},
 				{
+					"field": "versionNumber"
+				},
+				{
 					"field": "date"
 				},
 				{
@@ -2857,9 +2860,6 @@
 				},
 				{
 					"field": "extra"
-				},
-				{
-					"field": "versionNumber"
 				}
 			],
 			"creatorTypes": [
