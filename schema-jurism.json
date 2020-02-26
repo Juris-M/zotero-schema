@@ -3241,6 +3241,21 @@
 			],
 			"webpage": [
 				"webpage"
+			],
+			"gazette": [
+				"gazette"
+			],
+			"regulation": [
+				"regulation"
+			],
+			"classic": [
+				"classic"
+			],
+			"treaty": [
+				"treaty"
+			],
+			"standard": [
+				"standard"
 			]
 		},
 		"fields": {
@@ -3375,6 +3390,27 @@
 				"volume": [
 					"volume",
 					"codeNumber"
+				],
+				"committee": [
+					"committee"
+				],
+				"gazette-flag": [
+					"gazetteFlag"
+				],
+				"document-name": [
+					"documentName"
+				],
+				"volume-title": [
+					"volumeTitle"
+				],
+				"jurisdiction": [
+					"jurisdiction"
+				],
+				"publication-number": [
+					"publicationNumber"
+				],
+				"supplement": [
+					"supplementName"
 				]
 			},
 			"date": {
@@ -3408,7 +3444,7 @@
 				"bookSection": "Book Section",
 				"case": "Case",
 				"classic": "Classic",
-				"computerProgram": "Computer Program",
+				"computerProgram": "Software",
 				"conferencePaper": "Conference Paper",
 				"dictionaryEntry": "Dictionary Entry",
 				"document": "Document",
@@ -4601,7 +4637,7 @@
 				"priorityDate": "Priority Date",
 				"priorityNumbers": "Číslo priority",
 				"proceedingsTitle": "Jméno sborníku",
-				"programmingLanguage": "Prog. Language",
+				"programmingLanguage": "Prog. jazyk",
 				"programTitle": "Název programu",
 				"publicationDate": "Date Published",
 				"publicationNumber": "Publication No.",
@@ -5120,7 +5156,7 @@
 				"bookSection": "Book Section",
 				"case": "Case",
 				"classic": "Classic",
-				"computerProgram": "Computer Program",
+				"computerProgram": "Software",
 				"conferencePaper": "Conference Paper",
 				"dictionaryEntry": "Dictionary Entry",
 				"document": "Document",
@@ -5334,7 +5370,7 @@
 				"bookSection": "Book Section",
 				"case": "Case",
 				"classic": "Classic",
-				"computerProgram": "Computer Program",
+				"computerProgram": "Software",
 				"conferencePaper": "Conference Paper",
 				"dictionaryEntry": "Dictionary Entry",
 				"document": "Document",
@@ -5548,7 +5584,7 @@
 				"bookSection": "Book Section",
 				"case": "Case",
 				"classic": "Classic",
-				"computerProgram": "Computer Program",
+				"computerProgram": "Software",
 				"conferencePaper": "Conference Paper",
 				"dictionaryEntry": "Dictionary Entry",
 				"document": "Document",
@@ -7474,7 +7510,7 @@
 				"bookSection": "Book Section",
 				"case": "Case",
 				"classic": "Classic",
-				"computerProgram": "Computer Program",
+				"computerProgram": "Software",
 				"conferencePaper": "Conference Paper",
 				"dictionaryEntry": "Dictionary Entry",
 				"document": "Document",
@@ -8969,7 +9005,7 @@
 				"bill": "의안",
 				"blogPost": "블로그 게시물",
 				"book": "서적",
-				"bookSection": "서적 구역",
+				"bookSection": "책 소개 면",
 				"case": "소송",
 				"classic": "Classic",
 				"computerProgram": "컴퓨터 프로그램",
@@ -9309,7 +9345,7 @@
 				"priorityDate": "Priority Date",
 				"priorityNumbers": "Prioriteto numeris",
 				"proceedingsTitle": "Įvykio pavadinimas",
-				"programmingLanguage": "Prog. Language",
+				"programmingLanguage": "Prog. kalba",
 				"programTitle": "Programos pavadinimas",
 				"publicationDate": "Date Published",
 				"publicationNumber": "Publication No.",
@@ -9614,9 +9650,9 @@
 				"bookSection": "Del av bok",
 				"case": "Sak",
 				"classic": "Classic",
-				"computerProgram": "Dataprogram",
+				"computerProgram": "Programvare",
 				"conferencePaper": "Konferanseinnlegg",
-				"dictionaryEntry": "Ordboksoppslag",
+				"dictionaryEntry": "Oppslag i ordbok",
 				"document": "Dokument",
 				"email": "E-post",
 				"encyclopediaArticle": "Artikkel i oppslagsverk",
@@ -9652,8 +9688,8 @@
 				"accessDate": "Lest",
 				"adoptionDate": "Date Adopted",
 				"album": "Album",
-				"applicationNumber": "Program-nummer",
-				"archive": "Archive",
+				"applicationNumber": "Programvarenummer",
+				"archive": "Arkiv",
 				"archiveLocation": "Lokalisering i arkiv",
 				"artworkMedium": "Medium",
 				"artworkSize": "Kunstverk-størrelse",
@@ -9677,14 +9713,14 @@
 				"country": "Land",
 				"court": "Rett",
 				"date": "Dato",
-				"dateAdded": "Lagt til",
+				"dateAdded": "Dato lagt til",
 				"dateAmended": "Date Amended",
 				"dateDecided": "Avgjort (dato)",
 				"dateEnacted": "Innført (dato)",
-				"dateModified": "Sist endret",
+				"dateModified": "Endret",
 				"dictionaryTitle": "Ordbok",
 				"distributor": "Distributør",
-				"docketNumber": "Docket Number",
+				"docketNumber": "Registreringsnummer",
 				"documentName": "Document Name",
 				"documentNumber": "Dokumentnummer",
 				"DOI": "DOI",
@@ -9692,11 +9728,11 @@
 				"encyclopediaTitle": "Oppslagverk",
 				"episodeNumber": "Episodenummer",
 				"extra": "Ekstra",
-				"filingDate": "Filing Date",
+				"filingDate": "Innleveringsdato",
 				"firstPage": "Første side",
 				"forumTitle": "Forum-/listserv-tittel",
 				"gazetteFlag": "Gazette Ref",
-				"genre": "Genre",
+				"genre": "Sjanger",
 				"history": "Historie",
 				"institution": "Institusjon",
 				"interviewMedium": "Medium",
@@ -9704,7 +9740,7 @@
 				"ISSN": "ISSN",
 				"issue": "Nummer",
 				"issueDate": "Kjennelsesdato",
-				"issuingAuthority": "Issuing Authority",
+				"issuingAuthority": "Utstedende myndighet",
 				"itemType": "Type",
 				"journalAbbreviation": "Tidsskriftsforkortelse",
 				"jurisdiction": "Jurisdiction",
@@ -9713,7 +9749,7 @@
 				"legalStatus": "Rettslig status",
 				"legislativeBody": "Lovgivende organ",
 				"letterType": "Type",
-				"libraryCatalog": "Library Catalog",
+				"libraryCatalog": "Bibliotekskatalog",
 				"manuscriptType": "Type",
 				"mapType": "Type",
 				"medium": "Medium",
@@ -9724,7 +9760,7 @@
 				"newsCaseDate": "Case Date",
 				"number": "Nummer",
 				"numberOfVolumes": "# av volumer",
-				"numPages": "# of Pages",
+				"numPages": "# av sider",
 				"openingDate": "Date Opened",
 				"opus": "Opus No.",
 				"originalDate": "Orig. Date",
@@ -9737,8 +9773,8 @@
 				"priorityDate": "Priority Date",
 				"priorityNumbers": "Prioritetsnummer",
 				"proceedingsTitle": "Sakstittel",
-				"programmingLanguage": "Prog. Language",
-				"programTitle": "Program Title",
+				"programmingLanguage": "Programmeringsspråk",
+				"programTitle": "Program tittel",
 				"publicationDate": "Date Published",
 				"publicationNumber": "Publication No.",
 				"publicationTitle": "Publikasjon",
@@ -9776,7 +9812,7 @@
 				"title": "Tittel",
 				"university": "Universitet",
 				"url": "URL",
-				"versionNumber": "Version",
+				"versionNumber": "Versjon",
 				"videoRecordingFormat": "Format",
 				"volume": "Volum",
 				"volumeTitle": "Volume Title",
@@ -9788,13 +9824,13 @@
 				"artist": "Artist",
 				"attorneyAgent": "Advokat/Agent",
 				"author": "Forfatter",
-				"bookAuthor": "Book Author",
+				"bookAuthor": "Bokforfatter",
 				"cartographer": "Kartograf",
 				"castMember": "Skuespiller",
 				"commenter": "Kommentator",
 				"composer": "Komponist",
 				"contributor": "Medforfatter",
-				"cosponsor": "Cosponsor",
+				"cosponsor": "Medsponsor",
 				"counsel": "Rådgiver",
 				"director": "Instruktør",
 				"editor": "Redaktør",
@@ -9951,7 +9987,7 @@
 				"priorityDate": "Priority Date",
 				"priorityNumbers": "Prioriteitsnummers",
 				"proceedingsTitle": "Titel notulen",
-				"programmingLanguage": "Prog. Language",
+				"programmingLanguage": "Prog. taal",
 				"programTitle": "Programmatitel",
 				"publicationDate": "Date Published",
 				"publicationNumber": "Publication No.",
@@ -10379,7 +10415,7 @@
 				"priorityDate": "Priority Date",
 				"priorityNumbers": "Numery priorytetu",
 				"proceedingsTitle": "Tytuł sprawozdania",
-				"programmingLanguage": "Prog. Language",
+				"programmingLanguage": "Jęz. programowania",
 				"programTitle": "Tytuł programu",
 				"publicationDate": "Date Published",
 				"publicationNumber": "Publication No.",
