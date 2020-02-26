@@ -36,7 +36,12 @@ async function run() {
     var patch = JSON.parse(patchJSON);
 	
 // Apply Jurism changes
-    
+
+   // CSL fields
+   for (var cslField in patch.CSL_FIELDS) {
+   	   data.csl.fields.text[cslField] = patch.CSL_FIELDS[cslField];
+   }
+
     // Types
     for (var type in patch.TYPES) {
         console.log("Patching TYPES");
@@ -49,7 +54,7 @@ async function run() {
             data.itemTypes.push(clone);
         }
         // Add type entry
-        //data.csl.types[type] = [ type ];
+        data.csl.types[type] = [ type ];
     }
     // Creators
     for (var itemType in patch.CREATORS) {
