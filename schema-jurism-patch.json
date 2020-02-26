@@ -1037,15 +1037,5 @@
 			"rights",
 			"extra"
 		]
-	},
-
-	"CSL_FIELDS": {
-		"committee": ["committee"],
-		"gazette-flag": ["gazetteFlag"],
-		"document-name": ["documentName"],
-		"volume-title": ["volumeTitle"],
-		"jurisdiction": ["jurisdiction"],
-		"publication-number": ["publicationNumber"],
-		"supplement": ["supplementName"]
 	}
 }
