@@ -150,8 +150,9 @@
 			{ "field": "gazetteFlag" }
 		],
 		"treaty": [
-			{ "field": "reporter" },
+			{ "field": "treatyNumber", "baseField": "number" },
 			{ "field": "volume" },
+			{ "field": "reporter" },
 			{ "field": "pages" },
 			{ "field": "section" },
 			{ "field": "versionNumber" },
@@ -959,6 +960,7 @@
 			"abstractNote",
 			"shortTitle",
 			"reporter",
+			"treatyNumber",
 			"volume",
 			"pages",
 			"parentTreaty",
