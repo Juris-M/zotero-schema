@@ -1,5 +1,5 @@
 {
-	"version": 9,
+	"version": 10,
 	"itemTypes": [
 		{
 			"itemType": "artwork",
@@ -3179,8 +3179,8 @@
 				"computerProgram"
 			],
 			"broadcast": [
-				"tvBroadcast",
 				"podcast",
+				"tvBroadcast",
 				"radioBroadcast"
 			],
 			"chapter": [
