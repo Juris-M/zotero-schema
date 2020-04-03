@@ -3276,7 +3276,9 @@
 				"authority": [
 					"court",
 					"legislativeBody",
-					"issuingAuthority"
+					"issuingAuthority",
+					"institution",
+					"regulatoryBody"
 				],
 				"call-number": [
 					"callNumber",
@@ -3286,11 +3288,15 @@
 					"session"
 				],
 				"collection-number": [
-					"seriesNumber"
+					"seriesNumber",
+					"assemblyNumber",
+					"regnalYear",
+					"yearAsVolume"
 				],
 				"collection-title": [
 					"seriesTitle",
-					"series"
+					"series",
+					"parentTreaty"
 				],
 				"container-title": [
 					"publicationTitle",
@@ -3309,14 +3315,19 @@
 				],
 				"event": [
 					"meetingName",
-					"conferenceName"
+					"conferenceName",
+					"resolutionLabel"
 				],
 				"event-place": [
 					"place"
 				],
 				"genre": [
 					"type",
-					"programmingLanguage"
+					"programmingLanguage",
+					"genre",
+					"reign",
+					"sessionType",
+					"regulationType"
 				],
 				"ISBN": [
 					"ISBN"
@@ -3326,7 +3337,8 @@
 				],
 				"issue": [
 					"issue",
-					"priorityNumbers"
+					"priorityNumbers",
+					"meetingNumber"
 				],
 				"journalAbbreviation": [
 					"journalAbbreviation"
@@ -3368,7 +3380,8 @@
 				],
 				"section": [
 					"section",
-					"committee"
+					"committee",
+					"opus"
 				],
 				"shortTitle": [
 					"shortTitle"
@@ -3377,7 +3390,8 @@
 					"libraryCatalog"
 				],
 				"status": [
-					"legalStatus"
+					"legalStatus",
+					"status"
 				],
 				"title": [
 					"title"
@@ -3394,6 +3408,24 @@
 				"volume": [
 					"volume",
 					"codeNumber"
+				],
+				"document-name": [
+					"documentName"
+				],
+				"gazette-flag": [
+					"gazetteFlag"
+				],
+				"jurisdiction": [
+					"jurisdiction"
+				],
+				"publication-number": [
+					"publicationNumber"
+				],
+				"supplement": [
+					"supplementName"
+				],
+				"volume-title": [
+					"volumeTitle"
 				]
 			},
 			"date": {
@@ -4287,7 +4319,7 @@
 				"bookSection": "Capítol d'un llibre",
 				"case": "Cas",
 				"classic": "Classic",
-				"computerProgram": "Programa informàtic",
+				"computerProgram": "Programari",
 				"conferencePaper": "Text d'una conferència",
 				"dictionaryEntry": "Entrada de diccionari",
 				"document": "Document",
@@ -6652,7 +6684,7 @@
 				"bookSection": "Kirjan osa",
 				"case": "Oikeusjuttu",
 				"classic": "Classic",
-				"computerProgram": "Tietokoneohjelma",
+				"computerProgram": "Ohjelmisto",
 				"conferencePaper": "Konferenssiartikkeli",
 				"dictionaryEntry": "Sanakirjan hakusana",
 				"document": "Asiakirja",
@@ -6775,7 +6807,7 @@
 				"priorityDate": "Priority Date",
 				"priorityNumbers": "Etuoikeusnumerot",
 				"proceedingsTitle": "Konferenssijulkaisun otsikko",
-				"programmingLanguage": "Prog. Language",
+				"programmingLanguage": "Ohjelmointikieli",
 				"programTitle": "Ohjelman nimi",
 				"publicationDate": "Date Published",
 				"publicationNumber": "Publication No.",
@@ -7727,7 +7759,7 @@
 				"bookSection": "Könyvfejezet",
 				"case": "Eset",
 				"classic": "Classic",
-				"computerProgram": "Számítógépes program",
+				"computerProgram": "Szoftver",
 				"conferencePaper": "Dolgozat",
 				"dictionaryEntry": "Szótár szócikk",
 				"document": "Dokumentum",
@@ -13102,7 +13134,7 @@
 				"bookSection": "图书章节",
 				"case": "案例",
 				"classic": "Classic",
-				"computerProgram": "计算机程序",
+				"computerProgram": "软件",
 				"conferencePaper": "会议论文",
 				"dictionaryEntry": "词条",
 				"document": "文档",
@@ -13225,7 +13257,7 @@
 				"priorityDate": "Priority Date",
 				"priorityNumbers": "优先申请号",
 				"proceedingsTitle": "投递标题",
-				"programmingLanguage": "Prog. Language",
+				"programmingLanguage": "Prog. 语言",
 				"programTitle": "节目名称",
 				"publicationDate": "Date Published",
 				"publicationNumber": "Publication No.",

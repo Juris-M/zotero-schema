@@ -38,9 +38,16 @@ async function run() {
 // Apply Jurism changes
 
    // CSL fields
-   for (var cslField in patch.CSL_FIELDS) {
-   	   data.csl.fields.text[cslField] = patch.CSL_FIELDS[cslField];
-   }
+    for (var cslField in patch.CSL_FIELDS) {
+        if (!data.csl.fields.text[cslField]) {
+	        data.csl.fields.text[cslField] = [];
+	    }
+	    for (var zField of patch.CSL_FIELDS[cslField]) {
+	        if (data.csl.fields.text[cslField].indexOf(zField) === -1) {
+	            data.csl.fields.text[cslField].push(zField);
+	        }
+	    }
+    }
 
     // Types
     for (var type in patch.TYPES) {

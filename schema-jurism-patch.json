@@ -1039,5 +1039,55 @@
 			"rights",
 			"extra"
 		]
+	},
+	"CSL_FIELDS": {
+		"collection-number": [
+			"assemblyNumber",
+			"regnalYear",
+			"yearAsVolume"
+		],
+		"document-name": [
+			"documentName"
+		],
+		"gazette-flag": [
+			"gazetteFlag"
+		],
+		"genre": [
+			"genre",
+			"reign",
+			"sessionType",
+			"regulationType"
+		],
+		"authority": [
+			"institution",
+			"regulatoryBody"
+		],
+		"jurisdiction": [
+			"jurisdiction"
+		],
+		"issue": [
+			"meetingNumber"
+		],
+		"section": [
+			"opus"
+		],
+		"collection-title": [
+			"parentTreaty"
+		],
+		"publication-number": [
+			"publicationNumber"
+		],
+		"event": [
+			"resolutionLabel"
+		],
+		"status": [
+			"status"
+		],
+		"supplement": [
+			"supplementName"
+		],
+		"volume-title": [
+			"volumeTitle"
+		]
 	}
 }
