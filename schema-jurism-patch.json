@@ -1100,15 +1100,13 @@
 			"originalDate",
 			"priorityDate"
 		],
-		"event-date": [
-			"conferenceDate"
-		],
 		"issued": [
 			"date"
 		],
 		"event-date": [
 			"dateAmended",
-			"signingDate"
+			"signingDate",
+			"conferenceDate"
 		],
 		"submitted": [
 			"filingDate"

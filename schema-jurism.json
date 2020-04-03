@@ -3446,7 +3446,8 @@
 				],
 				"event-date": [
 					"dateAmended",
-					"signingDate"
+					"signingDate",
+					"conferenceDate"
 				],
 				"opening-date": [
 					"openingDate"
