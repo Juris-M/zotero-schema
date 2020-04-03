@@ -63,6 +63,10 @@ async function run() {
 	        }
         }
     }
+    for (var zName in patch.CSL_NAMES) {
+        var cslName = patch.CSL_NAMES[zName];
+        data.csl.names[zName] = cslName;
+    }
 
     // Types
     for (var type in patch.TYPES) {
