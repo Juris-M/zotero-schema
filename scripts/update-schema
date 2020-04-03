@@ -48,6 +48,21 @@ async function run() {
 	        }
 	    }
     }
+    for (var cslDate in data.csl.fields.date) {
+        if ("string" === typeof data.csl.fields.date[cslDate]) {
+            data.csl.fields.date[cslDate] = [data.csl.fields.date[cslDate]];
+        }
+    }
+    for (var cslDate in patch.CSL_DATES) {
+        if (!data.csl.fields.date[cslDate]) {
+	        data.csl.fields.date[cslDate] = [];
+	    }
+        for (var zDate of patch.CSL_DATES[cslDate]) {
+	        if (data.csl.fields.date[cslDate].indexOf(zDate) === -1) {
+	            data.csl.fields.date[cslDate].push(zDate);
+	        }
+        }
+    }
 
     // Types
     for (var type in patch.TYPES) {

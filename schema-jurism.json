@@ -3429,9 +3429,31 @@
 				]
 			},
 			"date": {
-				"accessed": "accessDate",
-				"issued": "date",
-				"submitted": "filingDate"
+				"accessed": [
+					"accessDate"
+				],
+				"issued": [
+					"date"
+				],
+				"submitted": [
+					"filingDate"
+				],
+				"original-date": [
+					"adoptionDate",
+					"newsCaseDate",
+					"originalDate",
+					"priorityDate"
+				],
+				"event-date": [
+					"dateAmended",
+					"signingDate"
+				],
+				"opening-date": [
+					"openingDate"
+				],
+				"publication-date": [
+					"publicationDate"
+				]
 			}
 		},
 		"names": {

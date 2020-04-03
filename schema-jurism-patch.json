@@ -1089,5 +1089,35 @@
 		"volume-title": [
 			"volumeTitle"
 		]
+	},
+	"CSL_DATES": {
+		"accessed": [
+			"accessDate"
+		],
+		"original-date": [
+			"adoptionDate",
+			"newsCaseDate",
+			"originalDate",
+			"priorityDate"
+		],
+		"event-date": [
+			"conferenceDate"
+		],
+		"issued": [
+			"date"
+		],
+		"event-date": [
+			"dateAmended",
+			"signingDate"
+		],
+		"submitted": [
+			"filingDate"
+		],
+		"opening-date": [
+			"openingDate"
+		],
+		"publication-date": [
+			"publicationDate"
+		]
 	}
 }
