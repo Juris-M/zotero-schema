@@ -70,7 +70,6 @@ async function run() {
 
     // Types
     for (var type in patch.TYPES) {
-        console.log("Patching TYPES");
         // Clone type base onto type in itemTypes
         if (!getArrayObject(data.itemTypes, "itemType", type, true)) {
             var base = patch.TYPES[type];
@@ -84,7 +83,6 @@ async function run() {
     }
     // Creators
     for (var itemType in patch.CREATORS) {
-        console.log("Patching CREATORS");
         for (var creatorType of patch.CREATORS[itemType]) {
             var info = getArrayObject(data.itemTypes, "itemType", itemType);
             if (!getArrayObject(info.creatorTypes, "creatorType", creatorType, true)) {
@@ -94,6 +92,7 @@ async function run() {
             }
         }
     }
+    
     // Fields
 	// Check for baseField as vanilla field on info.fields, and remove if present
 	// (if left in place, the cross-duplicate will cause a test failure)
@@ -101,7 +100,6 @@ async function run() {
 	// (some fields [like institution] have base field assignments that need to be removed)
 
     for (var itemType in patch.FIELDS) {
-        console.log("Patching FIELDS");
         var info = getArrayObject(data.itemTypes, "itemType", itemType);
         for (var field of patch.FIELDS[itemType]) {
 			if (field.baseField && getArrayObject(info.fields, "field", field.baseField, true)) {
@@ -123,7 +121,6 @@ async function run() {
     // Dates
     var dateAcc = {};
 	for (var itemType in patch.DATES) {
-        console.log("Patching DATES");
         var info = getArrayObject(data.itemTypes, "itemType", itemType);
         for (var field of patch.DATES[itemType]) {
             dateAcc[field] = true;

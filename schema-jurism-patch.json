@@ -1117,11 +1117,5 @@
 		"publication-date": [
 			"publicationDate"
 		]
-	},
-	"CSL_NAMES": {
-		"artist": "author",
-		"testimonyBy": "author",
-		"contributor": "contributor",
-		"commenter": "commenter"
 	}
 }

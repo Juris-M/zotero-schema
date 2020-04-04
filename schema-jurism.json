@@ -3467,11 +3467,7 @@
 			"recipient": "recipient",
 			"reviewedAuthor": "reviewed-author",
 			"seriesEditor": "collection-editor",
-			"translator": "translator",
-			"artist": "author",
-			"testimonyBy": "author",
-			"contributor": "contributor",
-			"commenter": "commenter"
+			"translator": "translator"
 		}
 	},
 	"locales": {
