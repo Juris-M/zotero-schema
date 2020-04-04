@@ -1474,11 +1474,11 @@
 			],
 			"creatorTypes": [
 				{
-					"creatorType": "contributor",
+					"creatorType": "testimonyBy",
 					"primary": true
 				},
 				{
-					"creatorType": "testimonyBy"
+					"creatorType": "contributor"
 				},
 				{
 					"creatorType": "translator"

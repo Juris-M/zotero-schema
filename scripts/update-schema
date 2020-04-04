@@ -91,6 +91,18 @@ async function run() {
                 });
             }
         }
+        var first = info.creatorTypes.slice(0, 1);
+        var remainder = info.creatorTypes.slice(1);
+        var target = remainder.find(o => o.creatorType === "testimonyBy");
+        if (target) {
+            delete first[0].primary;
+            remainder = first.concat(remainder.filter(o => o.creatorType !== "testimonyBy"));
+            target.primary = true;
+            first = [target];
+            info.creatorTypes = first.concat(remainder);
+        }
+            
+        
     }
     
     // Fields
