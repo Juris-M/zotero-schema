@@ -4,6 +4,10 @@
 			"zotero": "statute",
 			"csl": "gazette"
 		},
+		"hearing": {
+			"zotero": "bill",
+			"csl": "hearing"
+		},
 		"regulation": {
 			"zotero": "statute",
 			"csl": "regulation"
@@ -19,6 +23,10 @@
 		"standard": {
 			"zotero": "document",
 			"csl": "standard"
+		},
+		"videoRecording": {
+			"zotero": "videoRecording",
+			"csl": "video"
 		}
 	},
 
