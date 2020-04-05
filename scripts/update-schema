@@ -70,6 +70,13 @@ async function run() {
 
     // Types
     for (var type in patch.TYPES) {
+        // Override if present
+        for (var oldCslType in data.csl.types) {
+            var idx = data.csl.types[oldCslType].indexOf(type);
+            if (idx > -1) {
+                data.csl.types[oldCslType] = data.csl.types[oldCslType].slice(0, idx).concat(data.csl.types[oldCslType].slice(idx+1));
+            }
+        }
         // Clone type base onto type in itemTypes
         if (!getArrayObject(data.itemTypes, "itemType", type, true)) {
             var base = patch.TYPES[type];
