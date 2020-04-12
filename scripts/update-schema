@@ -86,9 +86,16 @@ async function run() {
             data.itemTypes.push(clone);
         }
         // Add type entry
-        data.csl.types[type] = [ type ];
+        data.csl.types[  patch.TYPES[type].csl ] = [ type ];
     }
     // Creators
+	for (var zType in patch.CREATORS) {
+	    for (var cslName of patch.CREATORS[zType]) {
+		    if (!data.csl.names[cslName]) {
+			    data.csl.names[cslName] = cslName;
+			}
+		}
+	}
     for (var itemType in patch.CREATORS) {
         for (var creatorType of patch.CREATORS[itemType]) {
             var info = getArrayObject(data.itemTypes, "itemType", itemType);
@@ -117,6 +124,13 @@ async function run() {
 	// (if left in place, the cross-duplicate will cause a test failure)
 	// Also check for field on info.fields, and replace with patch object if present
 	// (some fields [like institution] have base field assignments that need to be removed)
+
+	for (var i in data.csl.fields.text.section) {
+	   var cslVar = data.csl.fields.text.section[i];
+	   if (cslVar === "committee") {
+	       data.csl.fields.text.section = data.csl.fields.text.section.slice(0, i).concat(data.csl.fields.text.section.slice(i+1));
+	   }
+	}
 
     for (var itemType in patch.FIELDS) {
         var info = getArrayObject(data.itemTypes, "itemType", itemType);

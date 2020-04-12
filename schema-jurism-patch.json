@@ -34,7 +34,7 @@
 		"patent": ["recipient"],
 		"book": ["recipient"],
 		"bookSection": ["recipient"],
-		"hearing": ["testimonyBy", "translator"],
+		"hearing": ["testimonyBy", "contributor", "translator"],
 		"case": ["commenter", "translator"],
 		"statute": ["translator"],
 		"bill": ["translator"],
@@ -1081,6 +1081,9 @@
 		],
 		"collection-title": [
 			"parentTreaty"
+		],
+		"committee": [
+			"committee"
 		],
 		"publication-number": [
 			"publicationNumber"
