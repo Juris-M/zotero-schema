@@ -28,10 +28,16 @@ async function run() {
 		return;
 	}
 
+	// Zotero source to be patched
 	var oldJSON = fs.readFileSync('schema.json').toString();
 	var data = JSON.parse(oldJSON);
-	var version = parseInt(data.version);
 
+	// Previous Jurism schema, for version only
+	var oldJurismJSON = fs.readFileSync('schema-jurism.json').toString();
+	var oldJurismData = JSON.parse(oldJurismJSON);
+	var version = parseInt(oldJurismData.version);
+
+	// Patch info
     var patchJSON = fs.readFileSync('schema-jurism-patch.json').toString();
     var patch = JSON.parse(patchJSON);
 	
@@ -79,11 +85,13 @@ async function run() {
         }
         // Clone type base onto type in itemTypes
         if (!getArrayObject(data.itemTypes, "itemType", type, true)) {
-            var base = patch.TYPES[type];
-            var itemTypeInfo = getArrayObject(data.itemTypes, "itemType", base.zotero);
-            var clone = JSON.parse(JSON.stringify(itemTypeInfo));
-            clone.itemType = type;
-            data.itemTypes.push(clone);
+            var base = patch.TYPES[type].zotero;
+            if (base !== type) {
+                var itemTypeInfo = getArrayObject(data.itemTypes, "itemType", base);
+                var clone = JSON.parse(JSON.stringify(itemTypeInfo));
+                clone.itemType = type;
+                data.itemTypes.push(clone);
+            }
         }
         // Add type entry
         data.csl.types[  patch.TYPES[type].csl ] = [ type ];
