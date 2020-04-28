@@ -5,7 +5,7 @@
 			"csl": "gazette"
 		},
 		"hearing": {
-			"zotero": "bill",
+			"zotero": "hearing",
 			"csl": "hearing"
 		},
 		"regulation": {
@@ -598,8 +598,8 @@
 			"session",
 			"documentNumber",
 			"date",
-			"volume",
-			"pages",
+			"codeVolume",
+			"codePages",
 			"archiveLocation",
 			"reporter",
 			"publisher",
