@@ -113,7 +113,8 @@
 			{ "field": "archive" },
 			{ "field": "archiveLocation" },
 			{ "field": "documentName" },
-			{ "field": "reporter", "baseField": "publicationTitle" }
+			{ "field": "reporter", "baseField": "publicationTitle" },
+			{ "field": "adminFlag" }
 		], 
 		"statute": [
 			{ "field": "jurisdiction" },
@@ -356,6 +357,7 @@
 		],
 		"case": [
 			"caseName",
+			"adminFlag",
 			"abstractNote",
 			"jurisdiction",
 			"court",
@@ -1056,6 +1058,9 @@
 		],
 		"document-name": [
 			"documentName"
+		],
+		"admin-flag": [
+			"adminFlag"
 		],
 		"gazette-flag": [
 			"gazetteFlag"
