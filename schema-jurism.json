@@ -1,5 +1,5 @@
 {
-	"version": 15,
+	"version": 16,
 	"itemTypes": [
 		{
 			"itemType": "artwork",
@@ -2802,7 +2802,8 @@
 					"field": "shortTitle"
 				},
 				{
-					"field": "reporter"
+					"field": "reporter",
+					"baseField": "publicationTitle"
 				},
 				{
 					"field": "treatyNumber",

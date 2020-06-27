@@ -161,7 +161,7 @@
 		"treaty": [
 			{ "field": "treatyNumber", "baseField": "number" },
 			{ "field": "volume" },
-			{ "field": "reporter" },
+			{ "field": "reporter", "baseField": "publicationTitle" },
 			{ "field": "pages" },
 			{ "field": "section" },
 			{ "field": "versionNumber" },
