@@ -114,7 +114,8 @@
 			{ "field": "archiveLocation" },
 			{ "field": "documentName" },
 			{ "field": "reporter", "baseField": "publicationTitle" },
-			{ "field": "adminFlag" }
+			{ "field": "adminFlag" },
+			{ "field": "division" }
 		], 
 		"statute": [
 			{ "field": "jurisdiction" },
@@ -362,6 +363,7 @@
 			"shortTitle",
 			"jurisdiction",
 			"court",
+			"division",
 			"documentName",
 			"docketNumber",
 			"yearAsVolume",
