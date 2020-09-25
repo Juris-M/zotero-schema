@@ -1,5 +1,5 @@
 {
-	"version": 19,
+	"version": 20,
 	"itemTypes": [
 		{
 			"itemType": "artwork",
@@ -1700,6 +1700,102 @@
 			]
 		},
 		{
+			"itemType": "legalCommentary",
+			"fields": [
+				{
+					"field": "title"
+				},
+				{
+					"field": "abstractNote"
+				},
+				{
+					"field": "bookTitle",
+					"baseField": "publicationTitle"
+				},
+				{
+					"field": "series"
+				},
+				{
+					"field": "seriesNumber"
+				},
+				{
+					"field": "volume"
+				},
+				{
+					"field": "numberOfVolumes"
+				},
+				{
+					"field": "edition"
+				},
+				{
+					"field": "place"
+				},
+				{
+					"field": "publisher"
+				},
+				{
+					"field": "date"
+				},
+				{
+					"field": "pages"
+				},
+				{
+					"field": "language"
+				},
+				{
+					"field": "ISBN"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "url"
+				},
+				{
+					"field": "accessDate"
+				},
+				{
+					"field": "archive"
+				},
+				{
+					"field": "archiveLocation"
+				},
+				{
+					"field": "libraryCatalog"
+				},
+				{
+					"field": "callNumber"
+				},
+				{
+					"field": "rights"
+				},
+				{
+					"field": "extra"
+				}
+			],
+			"creatorTypes": [
+				{
+					"creatorType": "author",
+					"primary": true
+				},
+				{
+					"creatorType": "contributor"
+				},
+				{
+					"creatorType": "editor"
+				},
+				{
+					"creatorType": "bookAuthor"
+				},
+				{
+					"creatorType": "translator"
+				},
+				{
+					"creatorType": "seriesEditor"
+				}
+			]
+		},
+		{
 			"itemType": "letter",
 			"fields": [
 				{
@@ -3271,6 +3367,9 @@
 			],
 			"video": [
 				"videoRecording"
+			],
+			"legal-commentary": [
+				"legalCommentary"
 			]
 		},
 		"fields": {
@@ -3513,6 +3612,7 @@
 				"instantMessage": "Instant Message",
 				"interview": "Interview",
 				"journalArticle": "Journal Article",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Letter",
 				"magazineArticle": "Magazine Article",
 				"manuscript": "Manuscript",
@@ -3730,6 +3830,7 @@
 				"instantMessage": "مراسلة فورية على الانترنت",
 				"interview": "مقابلة",
 				"journalArticle": "مقالة في دورية",
+				"legalCommentary": "Legal Commentary",
 				"letter": "خطاب",
 				"magazineArticle": "مقالة في مجلة",
 				"manuscript": "مخطوطة",
@@ -3947,6 +4048,7 @@
 				"instantMessage": "Бързо съобщение",
 				"interview": "Интервю",
 				"journalArticle": "Статия в научно списание",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Писмо",
 				"magazineArticle": "Статия в списание",
 				"manuscript": "Ръкопис",
@@ -4164,6 +4266,7 @@
 				"instantMessage": "Kemennadenn flapva",
 				"interview": "Atersadenn",
 				"journalArticle": "Pennad kelaouenn",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Lizher",
 				"magazineArticle": "Pennad magazin",
 				"manuscript": "Dornskrid",
@@ -4381,6 +4484,7 @@
 				"instantMessage": "Missatge instantani",
 				"interview": "Entrevista",
 				"journalArticle": "Article de revista acadèmica",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Carta",
 				"magazineArticle": "Article de revista",
 				"manuscript": "Manuscrit",
@@ -4598,6 +4702,7 @@
 				"instantMessage": "Zpráva IM",
 				"interview": "Rozhovor",
 				"journalArticle": "Článek v časopise",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Dopis",
 				"magazineArticle": "Článek v magazínu",
 				"manuscript": "Rukopis",
@@ -4815,6 +4920,7 @@
 				"instantMessage": "Besked",
 				"interview": "Interview",
 				"journalArticle": "Tidsskriftsartikel",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Brev",
 				"magazineArticle": "Artikel i blad",
 				"manuscript": "Manuskript",
@@ -5018,7 +5124,7 @@
 				"book": "Buch",
 				"bookSection": "Buchteil",
 				"case": "Fall",
-				"classic": "Classic",
+				"classic": "Klassiker",
 				"computerProgram": "Software",
 				"conferencePaper": "Konferenz-Paper",
 				"dictionaryEntry": "Wörterbucheintrag",
@@ -5032,6 +5138,7 @@
 				"instantMessage": "Instant-Message",
 				"interview": "Interview",
 				"journalArticle": "Zeitschriftenartikel",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Brief",
 				"magazineArticle": "Magazin-Artikel",
 				"manuscript": "Manuskript",
@@ -5042,12 +5149,12 @@
 				"podcast": "Podcast",
 				"presentation": "Vortrag",
 				"radioBroadcast": "Radiosendung",
-				"regulation": "Regulation",
+				"regulation": "Verordnung",
 				"report": "Bericht",
 				"standard": "Standard",
 				"statute": "Gesetz",
 				"thesis": "Dissertation",
-				"treaty": "Treaty",
+				"treaty": "Vertrag",
 				"tvBroadcast": "Fernsehsendung",
 				"videoRecording": "Videoaufnahme",
 				"webpage": "Webseite"
@@ -5056,7 +5163,7 @@
 				"abstractNote": "Zusammenfassung",
 				"accessDate": "Heruntergeladen am",
 				"adminFlag": "Admin Ref",
-				"adoptionDate": "Date Adopted",
+				"adoptionDate": "Datum der Annahme",
 				"album": "Album",
 				"applicationNumber": "Bewerbungsnummer",
 				"archive": "Archiv",
@@ -5067,7 +5174,7 @@
 				"assignee": "Abtretungsempfänger",
 				"audioFileType": "Dateityp",
 				"audioRecordingFormat": "Format",
-				"billNumber": "Nummer des Gesetzentwurfs",
+				"billNumber": "Nummer des Entwurfs",
 				"blogTitle": "Titel des Blogs",
 				"bookTitle": "Buchtitel",
 				"callNumber": "Signatur",
@@ -5084,15 +5191,15 @@
 				"court": "Gericht",
 				"date": "Datum",
 				"dateAdded": "Hinzugefügt am",
-				"dateAmended": "Date Amended",
+				"dateAmended": "Änderungsdatum",
 				"dateDecided": "Beschlussdatum",
 				"dateEnacted": "Datum des Inkrafttretens",
 				"dateModified": "Geändert am",
 				"dictionaryTitle": "Titel des Wörterbuchs",
 				"distributor": "Verleih",
-				"division": "Division",
+				"division": "Gerichtsabteilung",
 				"docketNumber": "Aktenzeichen",
-				"documentName": "Document Name",
+				"documentName": "Name des Dokuments",
 				"documentNumber": "Dokumentennummer",
 				"DOI": "DOI",
 				"edition": "Auflage",
@@ -5114,7 +5221,7 @@
 				"issuingAuthority": "Herausgeber",
 				"itemType": "Typ",
 				"journalAbbreviation": "Zeitschriften-Abkürzung",
-				"jurisdiction": "Jurisdiction",
+				"jurisdiction": "Hoheitsbereich",
 				"label": "Label",
 				"language": "Sprache",
 				"legalStatus": "Rechtsstatus",
@@ -5126,17 +5233,17 @@
 				"medium": "Medium",
 				"meetingName": "Name der Sitzung",
 				"meetingNumber": "Meeting No.",
-				"nameOfAct": "Name des Erlasses",
+				"nameOfAct": "Titel",
 				"network": "Netzwerk",
 				"newsCaseDate": "Case Date",
 				"number": "Nummer",
 				"numberOfVolumes": "# von Bänden",
 				"numPages": "Anzahl der Seiten",
-				"openingDate": "Date Opened",
+				"openingDate": "Auflagedatum",
 				"opus": "Opus No.",
-				"originalDate": "Orig. Date",
+				"originalDate": "Originaldatum",
 				"pages": "Seiten",
-				"parentTreaty": "Parent Treaty",
+				"parentTreaty": "Muttervertrag",
 				"patentNumber": "Patentnummer",
 				"place": "Ort",
 				"postType": "Art von Eintrag",
@@ -5146,19 +5253,19 @@
 				"proceedingsTitle": "Titel des Konferenzbandes",
 				"programmingLanguage": "Programmiersprache",
 				"programTitle": "Name des Programms",
-				"publicationDate": "Date Published",
+				"publicationDate": "Veröffentlichungsdatum",
 				"publicationNumber": "Publication No.",
 				"publicationTitle": "Publikation",
 				"publicLawNumber": "Öffentliche Gesetzesnummer",
 				"publisher": "Verlag",
 				"references": "Quellenangaben",
 				"regnalYear": "Regnal Year",
-				"regulationType": "Type",
-				"regulatoryBody": "Authority",
-				"reign": "Case Type",
+				"regulationType": "Art der Verordnung",
+				"regulatoryBody": "Behörde",
+				"reign": "Art des Falls",
 				"release": "Release",
-				"reporter": "Gesetzessammlung",
-				"reporterVolume": "Nummer der Gesetzessammlung",
+				"reporter": "Fundstelle",
+				"reporterVolume": "Nummer der Fundstelle",
 				"reportNumber": "Nummer des Berichts",
 				"reportType": "Art von Bericht",
 				"resolutionLabel": "Resol. Label",
@@ -5171,26 +5278,26 @@
 				"seriesText": "Reihe Text",
 				"seriesTitle": "Titel der Reihe",
 				"session": "Sitzung",
-				"sessionType": "Session Type",
+				"sessionType": "Art der Sitzung",
 				"shortTitle": "Kurztitel",
-				"signingDate": "Date Signed",
+				"signingDate": "Unterzeichnungsdatum",
 				"status": "Status",
 				"studio": "Studio",
 				"subject": "Betreff",
-				"supplementName": "Supp. Name",
+				"supplementName": "Name der Beilage",
 				"system": "System",
 				"thesisType": "Art",
 				"title": "Titel",
-				"treatyNumber": "Treaty No.",
+				"treatyNumber": "Vertragsn.",
 				"university": "Universität",
 				"url": "URL",
 				"versionNumber": "Version",
 				"videoRecordingFormat": "Format",
 				"volume": "Band",
-				"volumeTitle": "Volume Title",
+				"volumeTitle": "Bandtitel",
 				"websiteTitle": "Titel der Website",
 				"websiteType": "Art der Webseite",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Jahr als Bandnr."
 			},
 			"creatorTypes": {
 				"artist": "Künstler",
@@ -5249,6 +5356,7 @@
 				"instantMessage": "Instant Message",
 				"interview": "Interview",
 				"journalArticle": "Journal Article",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Letter",
 				"magazineArticle": "Magazine Article",
 				"manuscript": "Manuscript",
@@ -5466,6 +5574,7 @@
 				"instantMessage": "Instant Message",
 				"interview": "Interview",
 				"journalArticle": "Journal Article",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Letter",
 				"magazineArticle": "Magazine Article",
 				"manuscript": "Manuscript",
@@ -5683,6 +5792,7 @@
 				"instantMessage": "Instant Message",
 				"interview": "Interview",
 				"journalArticle": "Journal Article",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Letter",
 				"magazineArticle": "Magazine Article",
 				"manuscript": "Manuscript",
@@ -5900,6 +6010,7 @@
 				"instantMessage": "Mensaje instantáneo",
 				"interview": "Entrevista",
 				"journalArticle": "Artículo de revista académica",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Carta",
 				"magazineArticle": "Artículo de revista",
 				"manuscript": "Manuscrito",
@@ -6117,6 +6228,7 @@
 				"instantMessage": "Välksõnum",
 				"interview": "Intervjuu",
 				"journalArticle": "Artikkel",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Kiri",
 				"magazineArticle": "Ajakirjaartikkel (mitteakad.)",
 				"manuscript": "Käsikiri",
@@ -6334,6 +6446,7 @@
 				"instantMessage": "Instant Message",
 				"interview": "Elkarrizketa",
 				"journalArticle": "Aldizkaria artikulu",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Gutun",
 				"magazineArticle": "Prentsa artikulu",
 				"manuscript": "Eskuizkribu",
@@ -6551,6 +6664,7 @@
 				"instantMessage": "پیام فوری",
 				"interview": "مصاحبه",
 				"journalArticle": "مقاله",
+				"legalCommentary": "Legal Commentary",
 				"letter": "نامه",
 				"magazineArticle": "مقاله مجله",
 				"manuscript": "دست‌نوشته",
@@ -6768,6 +6882,7 @@
 				"instantMessage": "Pikaviestimen viesti",
 				"interview": "Haastattelu",
 				"journalArticle": "Aikakausjulkaisun artikkeli",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Kirje",
 				"magazineArticle": "Aikakauslehden artikkeli",
 				"manuscript": "Käsikirjoitus",
@@ -6985,6 +7100,7 @@
 				"instantMessage": "Message instantané",
 				"interview": "Interview",
 				"journalArticle": "Article de revue",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Lettre",
 				"magazineArticle": "Article de magazine",
 				"manuscript": "Manuscrit",
@@ -7202,6 +7318,7 @@
 				"instantMessage": "Mensaxe instantáneo",
 				"interview": "Entrevista",
 				"journalArticle": "Artigo de publicación",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Carta",
 				"magazineArticle": "Artigo de revista",
 				"manuscript": "Manuscrito",
@@ -7419,6 +7536,7 @@
 				"instantMessage": "מסר מיידי",
 				"interview": "ראיון",
 				"journalArticle": "מאמר מכתב עת",
+				"legalCommentary": "Legal Commentary",
 				"letter": "מכתב",
 				"magazineArticle": "מאמר ממגזין",
 				"manuscript": "כתב-יד",
@@ -7636,6 +7754,7 @@
 				"instantMessage": "Instant Message",
 				"interview": "Interview",
 				"journalArticle": "Journal Article",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Letter",
 				"magazineArticle": "Magazine Article",
 				"manuscript": "Manuscript",
@@ -7853,6 +7972,7 @@
 				"instantMessage": "Azonnali üzenet",
 				"interview": "Interjú",
 				"journalArticle": "Folyóiratcikk",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Levél",
 				"magazineArticle": "Magazincikk",
 				"manuscript": "Kézirat",
@@ -8070,6 +8190,7 @@
 				"instantMessage": "Pesan Instan",
 				"interview": "Wawancara",
 				"journalArticle": "Artikel Jurnal",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Surat",
 				"magazineArticle": "Artikel Majalah",
 				"manuscript": "Manuskrip",
@@ -8287,6 +8408,7 @@
 				"instantMessage": "Skyndiskilaboð",
 				"interview": "Viðtal",
 				"journalArticle": "Fræðigrein í tímariti",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Bréf",
 				"magazineArticle": "Tímaritsgrein",
 				"manuscript": "Handrit",
@@ -8504,6 +8626,7 @@
 				"instantMessage": "Messaggio immediato",
 				"interview": "Intervista",
 				"journalArticle": "Articolo di periodico specializzato",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Lettera",
 				"magazineArticle": "Articolo di rivista",
 				"manuscript": "Manoscritto",
@@ -8721,6 +8844,7 @@
 				"instantMessage": "インスタントメッセージ",
 				"interview": "インタビュー",
 				"journalArticle": "学術論文",
+				"legalCommentary": "Legal Commentary",
 				"letter": "手紙",
 				"magazineArticle": "雑誌記事",
 				"manuscript": "原稿",
@@ -8938,6 +9062,7 @@
 				"instantMessage": "សារបន្ទាន់",
 				"interview": "បទសម្ភាសន៍",
 				"journalArticle": "អត្ថបទទនានុប្បវត្តិ",
+				"legalCommentary": "Legal Commentary",
 				"letter": "សំបុត្រ",
 				"magazineArticle": "អត្ថបទទស្សនាវដ្តី",
 				"manuscript": "ហត្ថាអត្ថបទ",
@@ -9155,6 +9280,7 @@
 				"instantMessage": "긴급 메시지",
 				"interview": "인터뷰",
 				"journalArticle": "저널 기사",
+				"legalCommentary": "Legal Commentary",
 				"letter": "편지",
 				"magazineArticle": "잡지 기사",
 				"manuscript": "원고",
@@ -9372,6 +9498,7 @@
 				"instantMessage": "Žinutė",
 				"interview": "Pokalbis",
 				"journalArticle": "Žurnalo straipsnis",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Laiškas",
 				"magazineArticle": "Periodinio žurnalo straipsnis",
 				"manuscript": "Rankraštis",
@@ -9589,6 +9716,7 @@
 				"instantMessage": "Instant Message",
 				"interview": "Ярилцлага",
 				"journalArticle": "Сэтгүүлийн өгүүлэл",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Захиа",
 				"magazineArticle": "Magazine Article",
 				"manuscript": "Manuscript",
@@ -9806,6 +9934,7 @@
 				"instantMessage": "Hurtigmelding",
 				"interview": "Intervju",
 				"journalArticle": "Tidsskriftsartikkel",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Brev",
 				"magazineArticle": "Magasinartikkel",
 				"manuscript": "Manuskript",
@@ -10023,6 +10152,7 @@
 				"instantMessage": "Instant message",
 				"interview": "Interview",
 				"journalArticle": "Artikel in academisch tijdschrift",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Brief",
 				"magazineArticle": "Artikel in magazine",
 				"manuscript": "Manuscript",
@@ -10240,6 +10370,7 @@
 				"instantMessage": "Snøggmelding",
 				"interview": "Intervju",
 				"journalArticle": "Tidsskriftartikkel",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Brev",
 				"magazineArticle": "Magasinartikkel",
 				"manuscript": "Manuskript",
@@ -10457,6 +10588,7 @@
 				"instantMessage": "Krótka wiadomość",
 				"interview": "Wywiad",
 				"journalArticle": "Artykuł z czasopisma",
+				"legalCommentary": "Legal Commentary",
 				"letter": "List",
 				"magazineArticle": "Artykuł z magazynu",
 				"manuscript": "Rękopis",
@@ -10674,6 +10806,7 @@
 				"instantMessage": "Mensagem instantânea",
 				"interview": "Entrevista",
 				"journalArticle": "Artigo de periódico",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Carta",
 				"magazineArticle": "Artigo de revista",
 				"manuscript": "Manuscrito",
@@ -10891,6 +11024,7 @@
 				"instantMessage": "Mensagem Instantânea",
 				"interview": "Entrevista",
 				"journalArticle": "Artigo em Revista Científica",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Carta",
 				"magazineArticle": "Artigo em Revista",
 				"manuscript": "Manuscrito",
@@ -11108,6 +11242,7 @@
 				"instantMessage": "Mesaj instantaneu",
 				"interview": "Interviu",
 				"journalArticle": "Articol de revistă",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Scrisoare",
 				"magazineArticle": "Articol de revistă magazin",
 				"manuscript": "Manuscris",
@@ -11325,6 +11460,7 @@
 				"instantMessage": "Мгновенное сообщение",
 				"interview": "Интервью",
 				"journalArticle": "Статья из рецензируемого журнала",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Письмо",
 				"magazineArticle": "Статья из прочей периодики",
 				"manuscript": "Рукопись",
@@ -11542,6 +11678,7 @@
 				"instantMessage": "Chatová správa",
 				"interview": "Osobná komunikácia",
 				"journalArticle": "Článok v odbornom časopise",
+				"legalCommentary": "Legal Commentary",
 				"letter": "List",
 				"magazineArticle": "Článok v populárnom časopise",
 				"manuscript": "Rukopis",
@@ -11759,6 +11896,7 @@
 				"instantMessage": "Neposredno sporočilo",
 				"interview": "Intervju",
 				"journalArticle": "Strokovni članek",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Pismo",
 				"magazineArticle": "Revijalni članek",
 				"manuscript": "Rokopis",
@@ -11976,6 +12114,7 @@
 				"instantMessage": "Брза порука",
 				"interview": "Интервју",
 				"journalArticle": "Чланак у часопису",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Писмо",
 				"magazineArticle": "Чланак у магазину",
 				"manuscript": "Рукопис",
@@ -12193,6 +12332,7 @@
 				"instantMessage": "Chattmeddelande",
 				"interview": "Intervju",
 				"journalArticle": "Tidskriftsartikel",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Brev",
 				"magazineArticle": "Magasinsartikel",
 				"manuscript": "Manuskript",
@@ -12410,6 +12550,7 @@
 				"instantMessage": "ข้อความด่วน",
 				"interview": "บทสัมภาษณ์",
 				"journalArticle": "บทความวารสาร",
+				"legalCommentary": "Legal Commentary",
 				"letter": "จดหมาย",
 				"magazineArticle": "บทความนิตยสาร",
 				"manuscript": "เอกสารต้นฉบับ",
@@ -12627,6 +12768,7 @@
 				"instantMessage": "Anlık İleti",
 				"interview": "Görüşme",
 				"journalArticle": "Bilimsel Dergi Makalesi",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Mektup",
 				"magazineArticle": "Genel Dergi Makalesi",
 				"manuscript": "El Yazması",
@@ -12844,6 +12986,7 @@
 				"instantMessage": "Миттєве повідомлення",
 				"interview": "Інтерв'ю",
 				"journalArticle": "Стаття з журналу",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Лист",
 				"magazineArticle": "Стаття з періодики",
 				"manuscript": "Рукопис",
@@ -13061,6 +13204,7 @@
 				"instantMessage": "Tin nhắn",
 				"interview": "Phỏng vấn",
 				"journalArticle": "Bài viết trong Tập san",
+				"legalCommentary": "Legal Commentary",
 				"letter": "Thư",
 				"magazineArticle": "Bài viết trong Tạp chí",
 				"manuscript": "Bản thảo",
@@ -13278,6 +13422,7 @@
 				"instantMessage": "即时讯息",
 				"interview": "采访稿",
 				"journalArticle": "期刊文章",
+				"legalCommentary": "Legal Commentary",
 				"letter": "信件",
 				"magazineArticle": "杂志文章",
 				"manuscript": "手稿",
@@ -13495,6 +13640,7 @@
 				"instantMessage": "即時訊息",
 				"interview": "訪談",
 				"journalArticle": "期刊文章",
+				"legalCommentary": "Legal Commentary",
 				"letter": "信件",
 				"magazineArticle": "雜誌文章",
 				"manuscript": "手稿",

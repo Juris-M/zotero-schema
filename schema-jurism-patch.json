@@ -27,6 +27,10 @@
 		"videoRecording": {
 			"zotero": "videoRecording",
 			"csl": "video"
+		},
+		"legalCommentary": {
+			"zotero": "bookSection",
+			"csl": "legal-commentary"
 		}
 	},
 
@@ -318,6 +322,32 @@
 			"date",
 			"numPages",
 			"medium",
+			"language",
+			"ISBN",
+			"shortTitle",
+			"url",
+			"accessDate",
+			"archive",
+			"archiveLocation",
+			"libraryCatalog",
+			"callNumber",
+			"rights",
+			"extra"
+		],
+		"legalCommentary": [
+			"title",
+			"abstractNote",
+			"bookTitle",
+			"series",
+			"seriesNumber",
+			"volume",
+			"volumeTitle",
+			"numberOfVolumes",
+			"edition",
+			"place",
+			"publisher",
+			"date",
+			"pages",
 			"language",
 			"ISBN",
 			"shortTitle",
