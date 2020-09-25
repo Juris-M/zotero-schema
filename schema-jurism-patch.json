@@ -33,7 +33,7 @@
 	"CREATORS": {
 		"patent": ["recipient"],
 		"book": ["recipient"],
-		"bookSection": ["recipient"],
+		"bookSection": ["commenter", "recipient"],
 		"hearing": ["testimonyBy", "contributor", "translator"],
 		"case": ["commenter", "translator"],
 		"statute": ["translator"],
