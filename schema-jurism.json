@@ -1,5 +1,5 @@
 {
-	"version": 20,
+	"version": 19,
 	"itemTypes": [
 		{
 			"itemType": "artwork",
@@ -520,9 +520,6 @@
 				},
 				{
 					"creatorType": "seriesEditor"
-				},
-				{
-					"creatorType": "commenter"
 				},
 				{
 					"creatorType": "recipient"
@@ -3486,9 +3483,9 @@
 			"reviewedAuthor": "reviewed-author",
 			"seriesEditor": "collection-editor",
 			"translator": "translator",
-			"commenter": "commenter",
 			"testimonyBy": "testimonyBy",
-			"contributor": "contributor"
+			"contributor": "contributor",
+			"commenter": "commenter"
 		}
 	},
 	"locales": {
