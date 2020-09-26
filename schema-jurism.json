@@ -1,5 +1,5 @@
 {
-	"version": 20,
+	"version": 21,
 	"itemTypes": [
 		{
 			"itemType": "artwork",
@@ -1720,6 +1720,9 @@
 				},
 				{
 					"field": "volume"
+				},
+				{
+					"field": "volumeTitle"
 				},
 				{
 					"field": "numberOfVolumes"

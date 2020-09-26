@@ -54,6 +54,9 @@
 		"bookSection": [
 			{ "field": "volumeTitle" }
 		],
+		"legalCommentary": [
+			{ "field": "volumeTitle" }
+		],
 		"standard": [
 			{ "field": "versionNumber" },
 			{ "field": "number" },
