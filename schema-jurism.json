@@ -1,5 +1,5 @@
 {
-	"version": 22,
+	"version": 23,
 	"itemTypes": [
 		{
 			"itemType": "artwork",
@@ -3374,7 +3374,7 @@
 			"video": [
 				"videoRecording"
 			],
-			"legal-commentary": [
+			"legal_commentary": [
 				"legalCommentary"
 			]
 		},
