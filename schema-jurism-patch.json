@@ -79,6 +79,8 @@
 			{ "field": "court" }
 		],
 		"journalArticle": [
+			{ "field": "place" },
+			{ "field": "publisher" },
 			{ "field": "status" },
 			{ "field": "jurisdiction" }
 		],
@@ -693,6 +695,8 @@
 			"seriesTitle",
 			"seriesText",
 			"journalAbbreviation",
+			"place",
+			"publisher",
 			"jurisdiction",
 			"language",
 			"DOI",
