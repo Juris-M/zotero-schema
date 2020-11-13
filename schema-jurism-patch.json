@@ -58,6 +58,11 @@
 		"legalCommentary": [
 			{ "field": "volumeTitle" }
 		],
+		"presentation": [
+			{ "field": "archiveCollection" },
+			{ "field": "archiveLocation" },
+			{ "field": "archive" }
+		],
 		"standard": [
 			{ "field": "versionNumber" },
 			{ "field": "number" },
@@ -860,9 +865,12 @@
 			"title",
 			"abstractNote",
 			"presentationType",
-			"date",
-			"place",
 			"meetingName",
+			"place",
+			"date",
+			"archiveCollection",
+			"archiveLocation",
+			"archive",
 			"url",
 			"accessDate",
 			"language",
@@ -1093,6 +1101,9 @@
 		]
 	},
 	"CSL_FIELDS": {
+		"archive_collection": [
+			"archiveCollection"
+		],
 		"collection-number": [
 			"assemblyNumber",
 			"regnalYear",
