@@ -53,10 +53,12 @@
 			{ "field": "volumeTitle" }
 		],
 		"bookSection": [
-			{ "field": "volumeTitle" }
+			{ "field": "volumeTitle" },
+			{ "field": "bookAbbreviation" }
 		],
 		"legalCommentary": [
-			{ "field": "volumeTitle" }
+			{ "field": "volumeTitle" },
+			{ "field": "bookAbbreviation" }
 		],
 		"presentation": [
 			{ "field": "archiveCollection" },
@@ -350,6 +352,7 @@
 			"title",
 			"abstractNote",
 			"bookTitle",
+			"bookAbbreviation",
 			"series",
 			"seriesNumber",
 			"volume",
@@ -376,6 +379,7 @@
 			"title",
 			"abstractNote",
 			"bookTitle",
+			"bookAbbreviation",
 			"series",
 			"seriesNumber",
 			"volume",
@@ -1101,6 +1105,9 @@
 		]
 	},
 	"CSL_FIELDS": {
+		"container-title-short": [
+			"bookAbbreviation"
+		],
 		"archive_collection": [
 			"archiveCollection"
 		],
