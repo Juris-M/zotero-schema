@@ -31,7 +31,10 @@ async function run() {
 	// Zotero source to be patched
 	var oldJSON = fs.readFileSync('schema.json').toString();
 	var data = JSON.parse(oldJSON);
-
+	
+	// Remove stale CSL JSON mapping. Patch contains a substitute.
+	delete data.csl.fields.text.journalAbbreviation
+	
 	// Previous Jurism schema, for version only
 	var oldJurismJSON = fs.readFileSync('schema-jurism.json').toString();
 	var oldJurismData = JSON.parse(oldJurismJSON);

@@ -54,11 +54,11 @@
 		],
 		"bookSection": [
 			{ "field": "volumeTitle" },
-			{ "field": "bookAbbreviation" }
+			{ "field": "bookAbbreviation", "baseField": "journalAbbreviation" }
 		],
 		"legalCommentary": [
 			{ "field": "volumeTitle" },
-			{ "field": "bookAbbreviation" }
+			{ "field": "bookAbbreviation", "baseField": "journalAbbreviation" }
 		],
 		"presentation": [
 			{ "field": "archiveCollection" },
@@ -1106,6 +1106,7 @@
 	},
 	"CSL_FIELDS": {
 		"container-title-short": [
+			"journalAbbreviation",
 			"bookAbbreviation"
 		],
 		"archive_collection": [

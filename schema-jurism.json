@@ -1,5 +1,5 @@
 {
-	"version": 29,
+	"version": 31,
 	"itemTypes": [
 		{
 			"itemType": "artwork",
@@ -438,7 +438,8 @@
 					"baseField": "publicationTitle"
 				},
 				{
-					"field": "bookAbbreviation"
+					"field": "bookAbbreviation",
+					"baseField": "journalAbbreviation"
 				},
 				{
 					"field": "series"
@@ -1725,7 +1726,8 @@
 					"baseField": "publicationTitle"
 				},
 				{
-					"field": "bookAbbreviation"
+					"field": "bookAbbreviation",
+					"baseField": "journalAbbreviation"
 				},
 				{
 					"field": "series"
@@ -3480,9 +3482,6 @@
 					"priorityNumbers",
 					"meetingNumber"
 				],
-				"journalAbbreviation": [
-					"journalAbbreviation"
-				],
 				"language": [
 					"language"
 				],
@@ -3548,6 +3547,7 @@
 					"codeNumber"
 				],
 				"container-title-short": [
+					"journalAbbreviation",
 					"bookAbbreviation"
 				],
 				"archive_collection": [
