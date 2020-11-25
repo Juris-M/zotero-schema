@@ -57,6 +57,7 @@
 			{ "field": "bookAbbreviation", "baseField": "journalAbbreviation" }
 		],
 		"legalCommentary": [
+			{ "field": "versionNumber" },
 			{ "field": "volumeTitle" },
 			{ "field": "bookAbbreviation", "baseField": "journalAbbreviation" }
 		],
@@ -359,6 +360,7 @@
 			"volumeTitle",
 			"numberOfVolumes",
 			"edition",
+			"versionNumber",
 			"place",
 			"publisher",
 			"date",
