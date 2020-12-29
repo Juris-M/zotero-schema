@@ -109,7 +109,8 @@
 			{ "field": "reporter", "baseField": "publicationTitle" },
 			{ "field": "meetingName" },
 			{ "field": "meetingNumber" },
-			{ "field": "volume" }
+			{ "field": "volume" },
+			{ "field": "documentNumber" }
 		],
 		"artwork": [
 			{ "field": "websiteTitle", "baseField": "publicationTitle" }
@@ -132,6 +133,7 @@
 			{ "field": "archive" },
 			{ "field": "archiveLocation" },
 			{ "field": "documentName" },
+			{ "field": "documentNumber" },
 			{ "field": "reporter", "baseField": "publicationTitle" },
 			{ "field": "adminFlag" },
 			{ "field": "division" }
@@ -412,8 +414,9 @@
 			"jurisdiction",
 			"court",
 			"division",
-			"documentName",
 			"docketNumber",
+			"documentName",
+			"documentNumber",
 			"yearAsVolume",
 			"reporterVolume",
 			"reporter",
@@ -1121,6 +1124,9 @@
 		],
 		"document-name": [
 			"documentName"
+		],
+		"document-number": [
+			"documentNumber"
 		],
 		"admin-flag": [
 			"adminFlag"
