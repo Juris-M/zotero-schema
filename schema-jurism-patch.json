@@ -4,10 +4,12 @@
 			"zotero": "statute",
 			"csl": "gazette"
 		},
+		/*
 		"hearing": {
 			"zotero": "hearing",
 			"csl": "hearing"
 		},
+		*/
 		"regulation": {
 			"zotero": "statute",
 			"csl": "regulation"
@@ -39,7 +41,7 @@
 		"book": ["recipient"],
 		"bookSection": ["recipient"],
 		"legalCommentary": ["recipient"],
-		"hearing": ["testimonyBy", "contributor", "translator"],
+		"hearing": ["testimonyBy", "translator"],
 		"case": ["commenter", "translator"],
 		"statute": ["translator"],
 		"bill": ["translator"],
