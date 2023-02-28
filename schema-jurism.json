@@ -1,6 +1,11 @@
 {
-	"version": 38,
+	"version": 39,
 	"itemTypes": [
+		{
+			"itemType": "annotation",
+			"fields": [],
+			"creatorTypes": []
+		},
 		{
 			"itemType": "artwork",
 			"fields": [
@@ -2357,6 +2362,95 @@
 			]
 		},
 		{
+			"itemType": "preprint",
+			"fields": [
+				{
+					"field": "citationKey"
+				},
+				{
+					"field": "title"
+				},
+				{
+					"field": "genre",
+					"baseField": "type"
+				},
+				{
+					"field": "repository",
+					"baseField": "publisher"
+				},
+				{
+					"field": "archiveID",
+					"baseField": "number"
+				},
+				{
+					"field": "place"
+				},
+				{
+					"field": "date"
+				},
+				{
+					"field": "series"
+				},
+				{
+					"field": "seriesNumber"
+				},
+				{
+					"field": "DOI"
+				},
+				{
+					"field": "abstractNote"
+				},
+				{
+					"field": "url"
+				},
+				{
+					"field": "accessDate"
+				},
+				{
+					"field": "archive"
+				},
+				{
+					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
+				},
+				{
+					"field": "libraryCatalog"
+				},
+				{
+					"field": "callNumber"
+				},
+				{
+					"field": "rights"
+				},
+				{
+					"field": "extra"
+				}
+			],
+			"creatorTypes": [
+				{
+					"creatorType": "author",
+					"primary": true
+				},
+				{
+					"creatorType": "contributor"
+				},
+				{
+					"creatorType": "editor"
+				},
+				{
+					"creatorType": "translator"
+				},
+				{
+					"creatorType": "reviewedAuthor"
+				}
+			]
+		},
+		{
 			"itemType": "presentation",
 			"fields": [
 				{
@@ -3297,9 +3391,7 @@
 	"csl": {
 		"types": {
 			"article": [
-				"document",
-				"attachment",
-				"note"
+				"preprint"
 			],
 			"article-journal": [
 				"journalArticle"
@@ -3314,8 +3406,7 @@
 				"bill"
 			],
 			"book": [
-				"book",
-				"computerProgram"
+				"book"
 			],
 			"broadcast": [
 				"podcast",
@@ -3325,6 +3416,11 @@
 			"chapter": [
 				"bookSection"
 			],
+			"document": [
+				"document",
+				"attachment",
+				"note"
+			],
 			"entry-dictionary": [
 				"dictionaryEntry"
 			],
@@ -3333,6 +3429,9 @@
 			],
 			"graphic": [
 				"artwork"
+			],
+			"hearing": [
+				"hearing"
 			],
 			"interview": [
 				"interview"
@@ -3372,6 +3471,9 @@
 			"report": [
 				"report"
 			],
+			"software": [
+				"computerProgram"
+			],
 			"song": [
 				"audioRecording"
 			],
@@ -3386,9 +3488,6 @@
 			],
 			"gazette": [
 				"gazette"
-			],
-			"hearing": [
-				"hearing"
 			],
 			"regulation": [
 				"regulation"
@@ -3460,13 +3559,12 @@
 				"edition": [
 					"edition"
 				],
-				"event": [
-					"meetingName",
-					"conferenceName",
-					"resolutionLabel"
-				],
 				"event-place": [
 					"place"
+				],
+				"event-title": [
+					"meetingName",
+					"conferenceName"
 				],
 				"genre": [
 					"type",
@@ -3489,6 +3587,9 @@
 				],
 				"language": [
 					"language"
+				],
+				"license": [
+					"rights"
 				],
 				"medium": [
 					"medium",
@@ -3579,6 +3680,9 @@
 				"publication-number": [
 					"publicationNumber"
 				],
+				"event": [
+					"resolutionLabel"
+				],
 				"supplement": [
 					"supplementName"
 				],
@@ -3621,22 +3725,27 @@
 		"names": {
 			"author": "author",
 			"bookAuthor": "container-author",
+			"castMember": "performer",
 			"composer": "composer",
+			"contributor": "contributor",
 			"director": "director",
 			"editor": "editor",
+			"guest": "guest",
 			"interviewer": "interviewer",
+			"producer": "producer",
 			"recipient": "recipient",
 			"reviewedAuthor": "reviewed-author",
 			"seriesEditor": "collection-editor",
+			"scriptwriter": "script-writer",
 			"translator": "translator",
 			"testimonyBy": "testimonyBy",
-			"contributor": "contributor",
 			"commenter": "commenter"
 		}
 	},
 	"locales": {
 		"af-ZA": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Artwork",
 				"attachment": "Attachment",
 				"audioRecording": "Audio Recording",
@@ -3668,6 +3777,7 @@
 				"note": "Note",
 				"patent": "Patent",
 				"podcast": "Podcast",
+				"preprint": "Preprint",
 				"presentation": "Presentation",
 				"radioBroadcast": "Radio Broadcast",
 				"regulation": "Regulation",
@@ -3689,6 +3799,7 @@
 				"applicationNumber": "Application Number",
 				"archive": "Archive",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Loc. in Archive",
 				"artworkMedium": "Medium",
 				"artworkSize": "Artwork Size",
@@ -3702,6 +3813,7 @@
 				"bookTitle": "Book Title",
 				"callNumber": "Call Number",
 				"caseName": "Case Name",
+				"citationKey": "Citation Key",
 				"code": "Code",
 				"codeNumber": "Code Number",
 				"codePages": "Code Pages",
@@ -3791,6 +3903,7 @@
 				"reporterVolume": "Reporter Volume",
 				"reportNumber": "Report Number",
 				"reportType": "Report Type",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Rights",
 				"runningTime": "Running Time",
@@ -3857,6 +3970,7 @@
 		},
 		"ar": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "عمل فني",
 				"attachment": "مرفق",
 				"audioRecording": "تسجيل صوتي",
@@ -3888,6 +4002,7 @@
 				"note": "ملاحظة",
 				"patent": "براءة الإختراع",
 				"podcast": "تدوينة وسائطية",
+				"preprint": "Preprint",
 				"presentation": "عرض تقديمي",
 				"radioBroadcast": "بث إذاعي",
 				"regulation": "Regulation",
@@ -3909,6 +4024,7 @@
 				"applicationNumber": "رقم الطلب",
 				"archive": "الارشيف",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "الموقع في الأرشيف",
 				"artworkMedium": "وسيط العمل الفني",
 				"artworkSize": "حجم العمل الفني",
@@ -3922,6 +4038,7 @@
 				"bookTitle": "عنوان الكتاب",
 				"callNumber": "رقم الإسترجاع",
 				"caseName": "اسم القضية",
+				"citationKey": "Citation Key",
 				"code": "التشفير",
 				"codeNumber": "رقم الرمز",
 				"codePages": "صفحات القانون",
@@ -4011,6 +4128,7 @@
 				"reporterVolume": "مجلد الأحكام",
 				"reportNumber": "رقم التقرير",
 				"reportType": "نوع التقرير",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "الحقوق",
 				"runningTime": "وقت التشغيل",
@@ -4077,6 +4195,7 @@
 		},
 		"bg-BG": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Произведение на изкуството",
 				"attachment": "Приложение",
 				"audioRecording": "Звукозапис",
@@ -4108,6 +4227,7 @@
 				"note": "Бележка",
 				"patent": "Патент",
 				"podcast": "Подкаст",
+				"preprint": "Preprint",
 				"presentation": "Презентация",
 				"radioBroadcast": "Радио излъчване",
 				"regulation": "Regulation",
@@ -4129,6 +4249,7 @@
 				"applicationNumber": "Номер на молба",
 				"archive": "Archive",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Позиция в архива",
 				"artworkMedium": "Медия на произведението:",
 				"artworkSize": "Размер на произведението:",
@@ -4142,6 +4263,7 @@
 				"bookTitle": "Заглавие на книга",
 				"callNumber": "Телефонен номер",
 				"caseName": "Име на партида",
+				"citationKey": "Citation Key",
 				"code": "Кодекс",
 				"codeNumber": "Код",
 				"codePages": "Страници на законодателство",
@@ -4231,6 +4353,7 @@
 				"reporterVolume": "Том на стенограмата",
 				"reportNumber": "Номер на отчет",
 				"reportType": "Вид отчета",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Права",
 				"runningTime": "Продължителност",
@@ -4297,6 +4420,7 @@
 		},
 		"br": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Skeudennadur",
 				"attachment": "Pezh-stag",
 				"audioRecording": "Enrolladenn aodio",
@@ -4328,6 +4452,7 @@
 				"note": "Notenn",
 				"patent": "Breved",
 				"podcast": "Podskignañ",
+				"preprint": "Preprint",
 				"presentation": "Kinnigadenn",
 				"radioBroadcast": "Abadenn radio",
 				"regulation": "Regulation",
@@ -4349,6 +4474,7 @@
 				"applicationNumber": "Niver arload",
 				"archive": "Diell",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Lec'hiadur en diell",
 				"artworkMedium": "Harp ar skeudenn",
 				"artworkSize": "Ment ar skeudennadur",
@@ -4362,6 +4488,7 @@
 				"bookTitle": "Titl al levr",
 				"callNumber": "Niver-envel",
 				"caseName": "Anv an afer",
+				"citationKey": "Citation Key",
 				"code": "Kod",
 				"codeNumber": "Niver kod",
 				"codePages": "Kod ar pajennoù",
@@ -4451,6 +4578,7 @@
 				"reporterVolume": "Levrenn dastumad",
 				"reportNumber": "Niver an danevell",
 				"reportType": "Doare danevell",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Aotreadurioù",
 				"runningTime": "Padelezh",
@@ -4517,6 +4645,7 @@
 		},
 		"ca-AD": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Peça artística",
 				"attachment": "Fitxer adjunt",
 				"audioRecording": "Enregistrament d'àudio",
@@ -4548,6 +4677,7 @@
 				"note": "Nota",
 				"patent": "Patent",
 				"podcast": "Podcast",
+				"preprint": "Preprint",
 				"presentation": "Presentació",
 				"radioBroadcast": "Emissió de ràdio",
 				"regulation": "Regulation",
@@ -4569,6 +4699,7 @@
 				"applicationNumber": "Número d'aplicació",
 				"archive": "Arxiu",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Localització a l'arxiu",
 				"artworkMedium": "Mitjà artístic",
 				"artworkSize": "Mida",
@@ -4582,6 +4713,7 @@
 				"bookTitle": "Títol del llibre",
 				"callNumber": "Número de catàleg",
 				"caseName": "Nom del cas",
+				"citationKey": "Citation Key",
 				"code": "Codi",
 				"codeNumber": "Número del codi",
 				"codePages": "Pàgines del codi",
@@ -4671,6 +4803,7 @@
 				"reporterVolume": "Volum del reporter",
 				"reportNumber": "Número d'informe",
 				"reportType": "Tipus d'informe",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Drets",
 				"runningTime": "Durada",
@@ -4737,6 +4870,7 @@
 		},
 		"cs-CZ": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Umělecké dílo",
 				"attachment": "Příloha",
 				"audioRecording": "Audio nahrávka",
@@ -4768,6 +4902,7 @@
 				"note": "Poznámka",
 				"patent": "Patent",
 				"podcast": "Podcast",
+				"preprint": "Preprint",
 				"presentation": "Prezentace",
 				"radioBroadcast": "Pořad v rádiu",
 				"regulation": "Regulation",
@@ -4789,6 +4924,7 @@
 				"applicationNumber": "Číslo žádosti",
 				"archive": "Archiv",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Místo v archivu",
 				"artworkMedium": "Médium",
 				"artworkSize": "Velikost díla",
@@ -4802,6 +4938,7 @@
 				"bookTitle": "Jméno knihy",
 				"callNumber": "Signatura",
 				"caseName": "Jméno případu",
+				"citationKey": "Citation Key",
 				"code": "Zákoník",
 				"codeNumber": "Kódové číslo",
 				"codePages": "Stránky zákoníku",
@@ -4891,6 +5028,7 @@
 				"reporterVolume": "Ročník sbírky",
 				"reportNumber": "Číslo zprávy",
 				"reportType": "Druhy zprávy",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Práva",
 				"runningTime": "Čas",
@@ -4957,6 +5095,7 @@
 		},
 		"da-DK": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Billede/skulptur",
 				"attachment": "Vedhæftning",
 				"audioRecording": "Lydoptagelse",
@@ -4988,6 +5127,7 @@
 				"note": "Note",
 				"patent": "Patent",
 				"podcast": "Podcast",
+				"preprint": "Preprint",
 				"presentation": "Præsentation",
 				"radioBroadcast": "Radioudsendelse",
 				"regulation": "Regulation",
@@ -5009,6 +5149,7 @@
 				"applicationNumber": "Ansøgning nr.",
 				"archive": "Samling",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Placering i samlingen",
 				"artworkMedium": "Medium",
 				"artworkSize": "Værkets størrelse",
@@ -5022,6 +5163,7 @@
 				"bookTitle": "Bogens titel",
 				"callNumber": "Opstillingssignatur",
 				"caseName": "Sagens navn",
+				"citationKey": "Citation Key",
 				"code": "Lovsamling",
 				"codeNumber": "Nummer",
 				"codePages": "Sider",
@@ -5111,6 +5253,7 @@
 				"reporterVolume": "Referat-bind",
 				"reportNumber": "Rapportens nr.",
 				"reportType": "Rapporttype",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Rettigheder",
 				"runningTime": "Længde (tid)",
@@ -5177,6 +5320,7 @@
 		},
 		"de": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Kunstwerk",
 				"attachment": "Anhang",
 				"audioRecording": "Tonaufnahme",
@@ -5208,6 +5352,7 @@
 				"note": "Notiz",
 				"patent": "Patent",
 				"podcast": "Podcast",
+				"preprint": "Preprint",
 				"presentation": "Vortrag",
 				"radioBroadcast": "Radiosendung",
 				"regulation": "Erlass",
@@ -5229,6 +5374,7 @@
 				"applicationNumber": "Einreichungsnummer",
 				"archive": "Archiv",
 				"archiveCollection": "Archivsammlung",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Standort im Archiv",
 				"artworkMedium": "Medium",
 				"artworkSize": "Größe des Kunstwerks",
@@ -5242,6 +5388,7 @@
 				"bookTitle": "Buchtitel",
 				"callNumber": "Signatur",
 				"caseName": "Name des Falls",
+				"citationKey": "Citation Key",
 				"code": "Gesetzessammlung",
 				"codeNumber": "Nr. der Ges.-Slg.",
 				"codePages": "Seiten der Ges.-Slg.",
@@ -5331,6 +5478,7 @@
 				"reporterVolume": "Nummer der Fundstelle",
 				"reportNumber": "Nummer des Berichts",
 				"reportType": "Art von Bericht",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Rechte",
 				"runningTime": "Laufzeit",
@@ -5397,6 +5545,7 @@
 		},
 		"el-GR": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Artwork",
 				"attachment": "Attachment",
 				"audioRecording": "Audio Recording",
@@ -5428,6 +5577,7 @@
 				"note": "Note",
 				"patent": "Patent",
 				"podcast": "Podcast",
+				"preprint": "Preprint",
 				"presentation": "Presentation",
 				"radioBroadcast": "Radio Broadcast",
 				"regulation": "Regulation",
@@ -5449,6 +5599,7 @@
 				"applicationNumber": "Application Number",
 				"archive": "Archive",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Loc. in Archive",
 				"artworkMedium": "Medium",
 				"artworkSize": "Artwork Size",
@@ -5462,6 +5613,7 @@
 				"bookTitle": "Book Title",
 				"callNumber": "Call Number",
 				"caseName": "Case Name",
+				"citationKey": "Citation Key",
 				"code": "Code",
 				"codeNumber": "Code Number",
 				"codePages": "Code Pages",
@@ -5551,6 +5703,7 @@
 				"reporterVolume": "Reporter Volume",
 				"reportNumber": "Report Number",
 				"reportType": "Report Type",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Rights",
 				"runningTime": "Running Time",
@@ -5617,6 +5770,7 @@
 		},
 		"en-GB": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Artwork",
 				"attachment": "Attachment",
 				"audioRecording": "Audio Recording",
@@ -5648,6 +5802,7 @@
 				"note": "Note",
 				"patent": "Patent",
 				"podcast": "Podcast",
+				"preprint": "Preprint",
 				"presentation": "Presentation",
 				"radioBroadcast": "Radio Broadcast",
 				"regulation": "Regulation",
@@ -5669,6 +5824,7 @@
 				"applicationNumber": "Application Number",
 				"archive": "Archive",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Loc. in Archive",
 				"artworkMedium": "Medium",
 				"artworkSize": "Artwork Size",
@@ -5682,6 +5838,7 @@
 				"bookTitle": "Book Title",
 				"callNumber": "Call Number",
 				"caseName": "Case Name",
+				"citationKey": "Citation Key",
 				"code": "Code",
 				"codeNumber": "Code Number",
 				"codePages": "Code Pages",
@@ -5771,6 +5928,7 @@
 				"reporterVolume": "Reporter Volume",
 				"reportNumber": "Report Number",
 				"reportType": "Report Type",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Rights",
 				"runningTime": "Running Time",
@@ -5837,6 +5995,7 @@
 		},
 		"en-US": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Artwork",
 				"attachment": "Attachment",
 				"audioRecording": "Audio Recording",
@@ -5868,6 +6027,7 @@
 				"note": "Note",
 				"patent": "Patent",
 				"podcast": "Podcast",
+				"preprint": "Preprint",
 				"presentation": "Presentation",
 				"radioBroadcast": "Radio Broadcast",
 				"regulation": "Regulation",
@@ -5889,6 +6049,7 @@
 				"applicationNumber": "Application Number",
 				"archive": "Archive",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Loc. in Archive",
 				"artworkMedium": "Medium",
 				"artworkSize": "Artwork Size",
@@ -5902,6 +6063,7 @@
 				"bookTitle": "Book Title",
 				"callNumber": "Call Number",
 				"caseName": "Case Name",
+				"citationKey": "Citation Key",
 				"code": "Code",
 				"codeNumber": "Code Number",
 				"codePages": "Code Pages",
@@ -5991,6 +6153,7 @@
 				"reporterVolume": "Reporter Volume",
 				"reportNumber": "Report Number",
 				"reportType": "Report Type",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Rights",
 				"runningTime": "Running Time",
@@ -6057,6 +6220,7 @@
 		},
 		"es-ES": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Obra de arte",
 				"attachment": "Adjunto",
 				"audioRecording": "Grabación de sonido",
@@ -6088,6 +6252,7 @@
 				"note": "Nota",
 				"patent": "Patente",
 				"podcast": "Pódcast",
+				"preprint": "Preprint",
 				"presentation": "Presentación",
 				"radioBroadcast": "Emisión de radio",
 				"regulation": "Regulation",
@@ -6109,6 +6274,7 @@
 				"applicationNumber": "Número de solicitud",
 				"archive": "Archivo",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Posición en archivo",
 				"artworkMedium": "Medio",
 				"artworkSize": "Tamaño de la obra",
@@ -6122,6 +6288,7 @@
 				"bookTitle": "Título del libro",
 				"callNumber": "Signatura",
 				"caseName": "Nombre del caso",
+				"citationKey": "Citation Key",
 				"code": "Código",
 				"codeNumber": "Número de código",
 				"codePages": "Páginas del código",
@@ -6211,6 +6378,7 @@
 				"reporterVolume": "Volumen de las actas",
 				"reportNumber": "Número de informe",
 				"reportType": "Tipo de informe",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Derechos",
 				"runningTime": "Duración",
@@ -6277,6 +6445,7 @@
 		},
 		"et-EE": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Kunstiteos",
 				"attachment": "Manus",
 				"audioRecording": "Helisalvestis",
@@ -6308,6 +6477,7 @@
 				"note": "Märkus",
 				"patent": "Patent",
 				"podcast": "Podcast",
+				"preprint": "Preprint",
 				"presentation": "Esitlus",
 				"radioBroadcast": "Raadiosaade",
 				"regulation": "Regulation",
@@ -6329,6 +6499,7 @@
 				"applicationNumber": "Taotluse number",
 				"archive": "Arhiiv",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Asukoht arhiivis",
 				"artworkMedium": "Kandja",
 				"artworkSize": "Kunstiteose suurus",
@@ -6342,6 +6513,7 @@
 				"bookTitle": "Raamatupealkiri",
 				"callNumber": "Kohaviit",
 				"caseName": "Kaasuse nimi",
+				"citationKey": "Citation Key",
 				"code": "Koodeks",
 				"codeNumber": "Koodeksinumber",
 				"codePages": "Koodeksi leheküljed",
@@ -6431,6 +6603,7 @@
 				"reporterVolume": "Raporteerija köide(?)",
 				"reportNumber": "Raportinumber",
 				"reportType": "Raportitüüp",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Õigused",
 				"runningTime": "Kestvus",
@@ -6497,6 +6670,7 @@
 		},
 		"eu-ES": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Arte lan",
 				"attachment": "Eranskina",
 				"audioRecording": "Audio Grabaketa",
@@ -6528,6 +6702,7 @@
 				"note": "Oharra",
 				"patent": "Patente",
 				"podcast": "Podcast",
+				"preprint": "Preprint",
 				"presentation": "Aurkezpena",
 				"radioBroadcast": "Irrati saioa",
 				"regulation": "Regulation",
@@ -6549,6 +6724,7 @@
 				"applicationNumber": "Application Number",
 				"archive": "Archive",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Aurkibidea artxiboan",
 				"artworkMedium": "Medio",
 				"artworkSize": "Neurri fisikoak",
@@ -6562,6 +6738,7 @@
 				"bookTitle": "Liburuaren izenburua",
 				"callNumber": "Erref. Zenbakia",
 				"caseName": "Case Name",
+				"citationKey": "Citation Key",
 				"code": "Kodea",
 				"codeNumber": "Code Number",
 				"codePages": "Code Pages",
@@ -6651,6 +6828,7 @@
 				"reporterVolume": "Reporter Volume",
 				"reportNumber": "Txostenaren zbk",
 				"reportType": "Txosten mota",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Eskubideak",
 				"runningTime": "Luzapena",
@@ -6717,6 +6895,7 @@
 		},
 		"fa": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "اثر هنری",
 				"attachment": "پیوست",
 				"audioRecording": "صدای ضبط شده",
@@ -6748,6 +6927,7 @@
 				"note": "یادداشت",
 				"patent": "ثبت اختراع",
 				"podcast": "پادکست",
+				"preprint": "Preprint",
 				"presentation": "ارائه",
 				"radioBroadcast": "برنامه رادیویی",
 				"regulation": "Regulation",
@@ -6769,6 +6949,7 @@
 				"applicationNumber": "شماره درخواست",
 				"archive": "آرشیو",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "محل در آرشیو",
 				"artworkMedium": "رسانه",
 				"artworkSize": "اندازه کار هنری",
@@ -6782,6 +6963,7 @@
 				"bookTitle": "عنوان کتاب",
 				"callNumber": "شماره فراخوانی",
 				"caseName": "نام پرونده",
+				"citationKey": "Citation Key",
 				"code": "کد",
 				"codeNumber": "شماره کد",
 				"codePages": "Code Pages",
@@ -6871,6 +7053,7 @@
 				"reporterVolume": "Reporter Volume",
 				"reportNumber": "شماره گزارش",
 				"reportType": "نوع گزارش",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "حقوق",
 				"runningTime": "زمان اجرا",
@@ -6937,6 +7120,7 @@
 		},
 		"fi-FI": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Taideteos",
 				"attachment": "Liite",
 				"audioRecording": "Äänite",
@@ -6968,6 +7152,7 @@
 				"note": "Muistiinpano",
 				"patent": "Patentti",
 				"podcast": "Podcast",
+				"preprint": "Preprint",
 				"presentation": "Esitelmä",
 				"radioBroadcast": "Radiolähetys",
 				"regulation": "Regulation",
@@ -6989,6 +7174,7 @@
 				"applicationNumber": "Hakemusnumero",
 				"archive": "Arkisto",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Paik. arkistossa",
 				"artworkMedium": "Materiaali",
 				"artworkSize": "Teoksen koko",
@@ -7002,6 +7188,7 @@
 				"bookTitle": "Kirjan nimi",
 				"callNumber": "Hyllypaikka",
 				"caseName": "Tapauksen nimi",
+				"citationKey": "Citation Key",
 				"code": "Koodi",
 				"codeNumber": "Koodinumero",
 				"codePages": "Koodin sivut",
@@ -7091,6 +7278,7 @@
 				"reporterVolume": "Raporttivuosikerta",
 				"reportNumber": "Raportti numero",
 				"reportType": "Raportin tyyppi",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Oikeudet",
 				"runningTime": "Soittoaika",
@@ -7157,6 +7345,7 @@
 		},
 		"fr-FR": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Illustration",
 				"attachment": "Pièce jointe",
 				"audioRecording": "Enregistrement audio",
@@ -7188,6 +7377,7 @@
 				"note": "Note",
 				"patent": "Brevet",
 				"podcast": "Balado (Podcast)",
+				"preprint": "Preprint",
 				"presentation": "Présentation",
 				"radioBroadcast": "Émission de radio",
 				"regulation": "Regulation",
@@ -7209,6 +7399,7 @@
 				"applicationNumber": "N° d'application",
 				"archive": "Archive",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Loc. dans l'archive",
 				"artworkMedium": "Support de l'illustration",
 				"artworkSize": "Taille d'illustration",
@@ -7222,6 +7413,7 @@
 				"bookTitle": "Titre du livre",
 				"callNumber": "Cote",
 				"caseName": "Nom de l'affaire",
+				"citationKey": "Citation Key",
 				"code": "Code",
 				"codeNumber": "N° de code",
 				"codePages": "Pages de code",
@@ -7311,6 +7503,7 @@
 				"reporterVolume": "Volume de recueil",
 				"reportNumber": "N° du rapport",
 				"reportType": "Type de rapport",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Autorisations",
 				"runningTime": "Durée",
@@ -7377,6 +7570,7 @@
 		},
 		"gl-ES": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Arte",
 				"attachment": "Anexo",
 				"audioRecording": "Gravación de son",
@@ -7408,6 +7602,7 @@
 				"note": "Nota",
 				"patent": "Patente",
 				"podcast": "Podcast",
+				"preprint": "Preprint",
 				"presentation": "Presentación",
 				"radioBroadcast": "Emisión de Radio",
 				"regulation": "Regulation",
@@ -7429,6 +7624,7 @@
 				"applicationNumber": "Número da solicitude",
 				"archive": "Arquivo",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Loc. no arquivo",
 				"artworkMedium": "Mediano",
 				"artworkSize": "Tamaño das ilustracións",
@@ -7442,6 +7638,7 @@
 				"bookTitle": "Título do libro",
 				"callNumber": "Número de catálogo",
 				"caseName": "Número do caso",
+				"citationKey": "Citation Key",
 				"code": "Código",
 				"codeNumber": "Número de código",
 				"codePages": "Páxinas de códigos",
@@ -7531,6 +7728,7 @@
 				"reporterVolume": "Tomo de reporteiros",
 				"reportNumber": "Número do informe",
 				"reportType": "Tipo de informe",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Dereitos",
 				"runningTime": "Duración",
@@ -7597,6 +7795,7 @@
 		},
 		"he-IL": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "יצירת אומנות",
 				"attachment": "קובץ מצורף",
 				"audioRecording": "הקלטת אודיו",
@@ -7628,6 +7827,7 @@
 				"note": "הערה",
 				"patent": "פטנט",
 				"podcast": "פודקאסט",
+				"preprint": "Preprint",
 				"presentation": "מצגת",
 				"radioBroadcast": "שידור רדיו",
 				"regulation": "Regulation",
@@ -7649,6 +7849,7 @@
 				"applicationNumber": "Application Number",
 				"archive": "Archive",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "מיקום בארכיב",
 				"artworkMedium": "Medium",
 				"artworkSize": "Artwork Size",
@@ -7662,6 +7863,7 @@
 				"bookTitle": "שם ספר",
 				"callNumber": "Call Number",
 				"caseName": "Case Name",
+				"citationKey": "Citation Key",
 				"code": "קוד",
 				"codeNumber": "Code Number",
 				"codePages": "Code Pages",
@@ -7751,6 +7953,7 @@
 				"reporterVolume": "Reporter Volume",
 				"reportNumber": "מספר דו\"ח",
 				"reportType": "סוג דו\"ח",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "זכויות",
 				"runningTime": "Running Time",
@@ -7817,6 +8020,7 @@
 		},
 		"hr-HR": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Artwork",
 				"attachment": "Attachment",
 				"audioRecording": "Audio Recording",
@@ -7848,6 +8052,7 @@
 				"note": "Note",
 				"patent": "Patent",
 				"podcast": "Podcast",
+				"preprint": "Preprint",
 				"presentation": "Presentation",
 				"radioBroadcast": "Radio Broadcast",
 				"regulation": "Regulation",
@@ -7869,6 +8074,7 @@
 				"applicationNumber": "Application Number",
 				"archive": "Archive",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Loc. in Archive",
 				"artworkMedium": "Medium",
 				"artworkSize": "Artwork Size",
@@ -7882,6 +8088,7 @@
 				"bookTitle": "Book Title",
 				"callNumber": "Call Number",
 				"caseName": "Case Name",
+				"citationKey": "Citation Key",
 				"code": "Code",
 				"codeNumber": "Code Number",
 				"codePages": "Code Pages",
@@ -7971,6 +8178,7 @@
 				"reporterVolume": "Reporter Volume",
 				"reportNumber": "Report Number",
 				"reportType": "Report Type",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Rights",
 				"runningTime": "Running Time",
@@ -8037,6 +8245,7 @@
 		},
 		"hu-HU": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Műalkotás",
 				"attachment": "Kapcsolat",
 				"audioRecording": "Hangfelvétel",
@@ -8068,6 +8277,7 @@
 				"note": "Jegyzet",
 				"patent": "Szabadalom",
 				"podcast": "Podcast",
+				"preprint": "Preprint",
 				"presentation": "Előadás",
 				"radioBroadcast": "Rádiós program",
 				"regulation": "Regulation",
@@ -8089,6 +8299,7 @@
 				"applicationNumber": "Bejelentés száma",
 				"archive": "Archívum",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Pontos lelőhely",
 				"artworkMedium": "Műalkotás médiuma",
 				"artworkSize": "Műalkotás mérete",
@@ -8102,6 +8313,7 @@
 				"bookTitle": "Könyv címe",
 				"callNumber": "Raktári jelzet",
 				"caseName": "Eset neve",
+				"citationKey": "Citation Key",
 				"code": "Törvénykönyv",
 				"codeNumber": "Törvénykönyv száma",
 				"codePages": "Oldalszám",
@@ -8191,6 +8403,7 @@
 				"reporterVolume": "Kötet",
 				"reportNumber": "Jelentés száma",
 				"reportType": "Jelentés típusa",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Jogok",
 				"runningTime": "Lejátszási idő",
@@ -8257,6 +8470,7 @@
 		},
 		"id-ID": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Karya Seni",
 				"attachment": "Lampiran",
 				"audioRecording": "Rekaman Audio",
@@ -8288,6 +8502,7 @@
 				"note": "Catatan",
 				"patent": "Paten",
 				"podcast": "Podcast",
+				"preprint": "Preprint",
 				"presentation": "Presentasi",
 				"radioBroadcast": "Siaran Radio",
 				"regulation": "Regulation",
@@ -8309,6 +8524,7 @@
 				"applicationNumber": "Nomor Aplikasi",
 				"archive": "Arsip",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Lokasi di dalam Arsip",
 				"artworkMedium": "Media",
 				"artworkSize": "Ukuran Karya Seni",
@@ -8322,6 +8538,7 @@
 				"bookTitle": "Judul Buku",
 				"callNumber": "Nomor Panggilan",
 				"caseName": "Nama Kasus",
+				"citationKey": "Citation Key",
 				"code": "Kode",
 				"codeNumber": "Nomor Kode",
 				"codePages": "Halaman Kode",
@@ -8411,6 +8628,7 @@
 				"reporterVolume": "Volume Reporter",
 				"reportNumber": "Nomor Laporan",
 				"reportType": "Jenis Laporan",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Hak",
 				"runningTime": "Waktu Berjalan",
@@ -8477,6 +8695,7 @@
 		},
 		"is-IS": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Listaverk",
 				"attachment": "Viðhengi",
 				"audioRecording": "Hljóðupptaka",
@@ -8508,6 +8727,7 @@
 				"note": "Athugasemd",
 				"patent": "Einkaleyfi",
 				"podcast": "Hljóðvarp",
+				"preprint": "Preprint",
 				"presentation": "Kynning",
 				"radioBroadcast": "Útvarpsútsending",
 				"regulation": "Regulation",
@@ -8529,6 +8749,7 @@
 				"applicationNumber": "Umsókn númer",
 				"archive": "Safnvista",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Staðsetning í safni",
 				"artworkMedium": "Miðill",
 				"artworkSize": "Stærð verks",
@@ -8542,6 +8763,7 @@
 				"bookTitle": "Titill bókar",
 				"callNumber": "Hillumerking",
 				"caseName": "Nafn máls",
+				"citationKey": "Citation Key",
 				"code": "Kóði",
 				"codeNumber": "Kóðanúmer",
 				"codePages": "Síður kóða",
@@ -8631,6 +8853,7 @@
 				"reporterVolume": "Fjöldi blaðamanna",
 				"reportNumber": "Skýrslunúmer",
 				"reportType": "Tegund skýrslu",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Réttindi",
 				"runningTime": "Lengd",
@@ -8697,6 +8920,7 @@
 		},
 		"it-IT": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Grafica",
 				"attachment": "Allegato",
 				"audioRecording": "Registrazione audio",
@@ -8728,6 +8952,7 @@
 				"note": "Nota",
 				"patent": "Brevetto",
 				"podcast": "Podcast",
+				"preprint": "Preprint",
 				"presentation": "Presentazione",
 				"radioBroadcast": "Trasmissione radiofonica",
 				"regulation": "Regulation",
@@ -8749,6 +8974,7 @@
 				"applicationNumber": "Numero di applicazione",
 				"archive": "Archivio",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Collocazione in archivio",
 				"artworkMedium": "Mezzo grafico",
 				"artworkSize": "Dimensioni grafiche",
@@ -8762,6 +8988,7 @@
 				"bookTitle": "Titolo del libro",
 				"callNumber": "Segnatura",
 				"caseName": "Nome del caso",
+				"citationKey": "Citation Key",
 				"code": "Codice",
 				"codeNumber": "Numero di codice",
 				"codePages": "Pagine del codice",
@@ -8851,6 +9078,7 @@
 				"reporterVolume": "Volume di report",
 				"reportNumber": "Numero di report",
 				"reportType": "Tipo di report",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Diritti",
 				"runningTime": "Tempo di esercizio",
@@ -8917,6 +9145,7 @@
 		},
 		"ja-JP": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "芸術作品",
 				"attachment": "添付ファイル",
 				"audioRecording": "録音",
@@ -8948,6 +9177,7 @@
 				"note": "メモ",
 				"patent": "特許",
 				"podcast": "ポッドキャスト",
+				"preprint": "Preprint",
 				"presentation": "プレゼンテーション",
 				"radioBroadcast": "ラジオ放送",
 				"regulation": "Regulation",
@@ -8969,6 +9199,7 @@
 				"applicationNumber": "商標登録号",
 				"archive": "アーカイブ",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "アーカイブ番号",
 				"artworkMedium": "素材・技法",
 				"artworkSize": "芸術作品のサイズ",
@@ -8982,6 +9213,7 @@
 				"bookTitle": "書籍名",
 				"callNumber": "図書整理番号",
 				"caseName": "事件名",
+				"citationKey": "Citation Key",
 				"code": "コード",
 				"codeNumber": "コード番号",
 				"codePages": "ページ",
@@ -9071,6 +9303,7 @@
 				"reporterVolume": "リポーター巻",
 				"reportNumber": "レポート番号",
 				"reportType": "レポートの種類",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "権利",
 				"runningTime": "経過時間",
@@ -9137,6 +9370,7 @@
 		},
 		"km": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "សិល្បៈ",
 				"attachment": "ឯកសារកម្ជាប់",
 				"audioRecording": "ខ្សែអាត់សំឡេង",
@@ -9168,6 +9402,7 @@
 				"note": "កំណត់ចំណាំ",
 				"patent": "តត្តកម្ម",
 				"podcast": "ផដខាស្ត៍",
+				"preprint": "Preprint",
 				"presentation": "ឧទ្ទេសបទ",
 				"radioBroadcast": "កម្មវិធីវិទ្យុ",
 				"regulation": "Regulation",
@@ -9189,6 +9424,7 @@
 				"applicationNumber": "ពាក្យសុំលេខ",
 				"archive": "បណ្ណាសារ",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "ទីតាំងក្នុងបណ្ណាសារ",
 				"artworkMedium": "សារព័ត៌មាន",
 				"artworkSize": "សិល្បៈ",
@@ -9202,6 +9438,7 @@
 				"bookTitle": "ចំណងជើងសៀវភៅ",
 				"callNumber": "លេខហៅ",
 				"caseName": "ចំណងជើងករណី/រឿងក្តី",
+				"citationKey": "Citation Key",
 				"code": "ក្រម",
 				"codeNumber": "លេខក្រម",
 				"codePages": "ទំព័រក្រម",
@@ -9291,6 +9528,7 @@
 				"reporterVolume": "វ៉ុលរបាយការណ៍",
 				"reportNumber": "លេខរបាយការណ៍",
 				"reportType": "ប្រភេទរបាយការណ៍",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "សិទ្ធិ",
 				"runningTime": "ម៉ោងដំណើរការ",
@@ -9357,6 +9595,7 @@
 		},
 		"ko-KR": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "예술품",
 				"attachment": "첨부",
 				"audioRecording": "녹음",
@@ -9388,6 +9627,7 @@
 				"note": "노트",
 				"patent": "특허",
 				"podcast": "팟캐스트",
+				"preprint": "Preprint",
 				"presentation": "발표",
 				"radioBroadcast": "라디오 방송",
 				"regulation": "Regulation",
@@ -9409,6 +9649,7 @@
 				"applicationNumber": "출원 번호",
 				"archive": "아카이브",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "아카이브 위치",
 				"artworkMedium": "소재·기법",
 				"artworkSize": "예술품의 크기",
@@ -9422,6 +9663,7 @@
 				"bookTitle": "책 제목",
 				"callNumber": "도서 번호",
 				"caseName": "사건명",
+				"citationKey": "Citation Key",
 				"code": "코드",
 				"codeNumber": "코드 번호",
 				"codePages": "법전 페이지",
@@ -9511,6 +9753,7 @@
 				"reporterVolume": "보고서 권수",
 				"reportNumber": "보고서 번호",
 				"reportType": "보고 형식",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "소유권",
 				"runningTime": "동작 시간",
@@ -9577,6 +9820,7 @@
 		},
 		"lt-LT": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Iliustracija",
 				"attachment": "Priedas",
 				"audioRecording": "Garso įrašas",
@@ -9608,6 +9852,7 @@
 				"note": "Pastaba",
 				"patent": "Patentas",
 				"podcast": "Tinklalaidė",
+				"preprint": "Preprint",
 				"presentation": "Pateiktis",
 				"radioBroadcast": "Radijo laida",
 				"regulation": "Regulation",
@@ -9629,6 +9874,7 @@
 				"applicationNumber": "Pareiškimo numeris",
 				"archive": "Archyvas",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Vieta archyve",
 				"artworkMedium": "Laikmena",
 				"artworkSize": "Paveikslo dydis",
@@ -9642,6 +9888,7 @@
 				"bookTitle": "Knygos pavad.",
 				"callNumber": "Šifras",
 				"caseName": "Bylos pavadinimas",
+				"citationKey": "Citation Key",
 				"code": "Kodas",
 				"codeNumber": "Kodekso numeris",
 				"codePages": "Puslapiai kodekse",
@@ -9731,6 +9978,7 @@
 				"reporterVolume": "Pranešimo tomas",
 				"reportNumber": "Pranešimo numeris",
 				"reportType": "Pranešimo tipas",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Teisės",
 				"runningTime": "Trukmė",
@@ -9797,6 +10045,7 @@
 		},
 		"mn-MN": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Artwork",
 				"attachment": "Хавсралт",
 				"audioRecording": "Audio Recording",
@@ -9828,6 +10077,7 @@
 				"note": "Тэмдэглэл",
 				"patent": "Патент",
 				"podcast": "Podcast",
+				"preprint": "Preprint",
 				"presentation": "Presentation",
 				"radioBroadcast": "Radio Broadcast",
 				"regulation": "Regulation",
@@ -9849,6 +10099,7 @@
 				"applicationNumber": "Application Number",
 				"archive": "Archive",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Loc. in Archive",
 				"artworkMedium": "Дунд",
 				"artworkSize": "Artwork Size",
@@ -9862,6 +10113,7 @@
 				"bookTitle": "Номын гарчиг",
 				"callNumber": "Call Number",
 				"caseName": "Case Name",
+				"citationKey": "Citation Key",
 				"code": "Код",
 				"codeNumber": "Кодын дугаар",
 				"codePages": "Code Pages",
@@ -9951,6 +10203,7 @@
 				"reporterVolume": "Reporter Volume",
 				"reportNumber": "Тайлангийн дугаар",
 				"reportType": "Тайлангийн төрөл",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Эрхүүд",
 				"runningTime": "Running Time",
@@ -10017,6 +10270,7 @@
 		},
 		"nb-NO": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Kunstverk",
 				"attachment": "Vedlegg",
 				"audioRecording": "Lydopptak",
@@ -10048,6 +10302,7 @@
 				"note": "Notat",
 				"patent": "Patent",
 				"podcast": "Podcast",
+				"preprint": "Preprint",
 				"presentation": "Presentasjon",
 				"radioBroadcast": "Radiosending",
 				"regulation": "Regulation",
@@ -10069,6 +10324,7 @@
 				"applicationNumber": "Programvarenummer",
 				"archive": "Arkiv",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Lokalisering i arkiv",
 				"artworkMedium": "Medium",
 				"artworkSize": "Kunstverk-størrelse",
@@ -10082,6 +10338,7 @@
 				"bookTitle": "Boktittel",
 				"callNumber": "Plass-signatur",
 				"caseName": "Saksnavn",
+				"citationKey": "Citation Key",
 				"code": "Kode",
 				"codeNumber": "Tekst nummer",
 				"codePages": "Sider i tekst",
@@ -10171,6 +10428,7 @@
 				"reporterVolume": "Reporter volum",
 				"reportNumber": "Rapportnummer",
 				"reportType": "Rapporttype",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Rettigheter",
 				"runningTime": "Lengde",
@@ -10237,6 +10495,7 @@
 		},
 		"nl-NL": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Kunstwerk",
 				"attachment": "Bijlage",
 				"audioRecording": "Geluidsopname",
@@ -10268,6 +10527,7 @@
 				"note": "Aantekening",
 				"patent": "Patent / Octrooi",
 				"podcast": "Podcast",
+				"preprint": "Preprint",
 				"presentation": "Presentatie",
 				"radioBroadcast": "Radio-uitzending",
 				"regulation": "Regulation",
@@ -10289,6 +10549,7 @@
 				"applicationNumber": "Aanvraagnummer",
 				"archive": "Archief",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Locatie in archief",
 				"artworkMedium": "Medium",
 				"artworkSize": "Afmetingen kunstwerk",
@@ -10302,6 +10563,7 @@
 				"bookTitle": "Boektitel",
 				"callNumber": "Indexnummer",
 				"caseName": "Naam rechtszaak",
+				"citationKey": "Citation Key",
 				"code": "Publicatiemedium",
 				"codeNumber": "... tranche van wet",
 				"codePages": "Nummer (binnen dossier)",
@@ -10391,6 +10653,7 @@
 				"reporterVolume": "Jaargang(, Editie)",
 				"reportNumber": "Nummer (van het rapport)",
 				"reportType": "Rapport-type",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Rechten",
 				"runningTime": "Duur",
@@ -10457,6 +10720,7 @@
 		},
 		"nn-NO": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Kunstverk",
 				"attachment": "Vedlegg",
 				"audioRecording": "Lydopptak",
@@ -10488,6 +10752,7 @@
 				"note": "Notat",
 				"patent": "Patent",
 				"podcast": "Podkast",
+				"preprint": "Preprint",
 				"presentation": "Presentasjon",
 				"radioBroadcast": "Radiosending",
 				"regulation": "Regulation",
@@ -10509,6 +10774,7 @@
 				"applicationNumber": "Program-nummer",
 				"archive": "Arkiv\\n",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Lokalisering i arkiv",
 				"artworkMedium": "Medium",
 				"artworkSize": "Kunstverk-storleik",
@@ -10522,6 +10788,7 @@
 				"bookTitle": "Boktittel",
 				"callNumber": "Plass-signatur",
 				"caseName": "Saksnamn",
+				"citationKey": "Citation Key",
 				"code": "Kode",
 				"codeNumber": "Tekst nummer",
 				"codePages": "Sider i tekst",
@@ -10611,6 +10878,7 @@
 				"reporterVolume": "Reporter volum",
 				"reportNumber": "Rapportnummer",
 				"reportType": "Rapporttype",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Rettar",
 				"runningTime": "Lengd",
@@ -10677,6 +10945,7 @@
 		},
 		"pl-PL": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Dzieło sztuki",
 				"attachment": "Załącznik",
 				"audioRecording": "Nagranie audio",
@@ -10708,6 +10977,7 @@
 				"note": "Notatka",
 				"patent": "Patent",
 				"podcast": "Podcast",
+				"preprint": "Preprint",
 				"presentation": "Prezentacja",
 				"radioBroadcast": "Audycja radiowa",
 				"regulation": "Regulation",
@@ -10729,6 +10999,7 @@
 				"applicationNumber": "Numer zgłoszenia",
 				"archive": "Archiwum",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Miejsce w archiwum",
 				"artworkMedium": "Technika",
 				"artworkSize": "Wielkość dzieła",
@@ -10742,6 +11013,7 @@
 				"bookTitle": "Tytuł książki",
 				"callNumber": "Numer klasyfikacyjny",
 				"caseName": "Tytuł sprawy",
+				"citationKey": "Citation Key",
 				"code": "Kod",
 				"codeNumber": "Numer kodu",
 				"codePages": "Kod stron",
@@ -10831,6 +11103,7 @@
 				"reporterVolume": "Tom w zbiorze orzecznictwa",
 				"reportNumber": "Numer raportu",
 				"reportType": "Typ raportu",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Przepisy/Prawa",
 				"runningTime": "Czas trwania",
@@ -10897,6 +11170,7 @@
 		},
 		"pt-BR": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Obra de arte",
 				"attachment": "Anexo",
 				"audioRecording": "Gravação de áudio",
@@ -10928,6 +11202,7 @@
 				"note": "Nota",
 				"patent": "Patente",
 				"podcast": "Podcast",
+				"preprint": "Preprint",
 				"presentation": "Apresentação",
 				"radioBroadcast": "Transmissão de rádio",
 				"regulation": "Regulation",
@@ -10949,6 +11224,7 @@
 				"applicationNumber": "Número da inscrição",
 				"archive": "Arquivo",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Localização no arquivo",
 				"artworkMedium": "Suporte",
 				"artworkSize": "Dimensões",
@@ -10962,6 +11238,7 @@
 				"bookTitle": "Título do livro",
 				"callNumber": "Número de chamada",
 				"caseName": "Nome do caso",
+				"citationKey": "Citation Key",
 				"code": "Código",
 				"codeNumber": "Número de código",
 				"codePages": "Páginas do código",
@@ -11051,6 +11328,7 @@
 				"reporterVolume": "Volume do Reporter",
 				"reportNumber": "Número do relatório",
 				"reportType": "Tipo de relatório",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Direitos",
 				"runningTime": "Tempo de execução",
@@ -11117,6 +11395,7 @@
 		},
 		"pt-PT": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Obra de Arte",
 				"attachment": "Anexo",
 				"audioRecording": "Gravação Áudio",
@@ -11148,6 +11427,7 @@
 				"note": "Nota",
 				"patent": "Patente",
 				"podcast": "Emissão Pod",
+				"preprint": "Preprint",
 				"presentation": "Apresentação",
 				"radioBroadcast": "Emissão Radiofónica",
 				"regulation": "Regulation",
@@ -11169,6 +11449,7 @@
 				"applicationNumber": "Número da Candidatura",
 				"archive": "Arquivo",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Localização no Arquivo",
 				"artworkMedium": "Suporte Artístico",
 				"artworkSize": "Dimensão da Obra de Arte",
@@ -11182,6 +11463,7 @@
 				"bookTitle": "Título do Livro",
 				"callNumber": "Número de Chamada",
 				"caseName": "Nome do Caso",
+				"citationKey": "Citation Key",
 				"code": "Código",
 				"codeNumber": "Número de Código",
 				"codePages": "Páginas do Código",
@@ -11271,6 +11553,7 @@
 				"reporterVolume": "Volume do Relator",
 				"reportNumber": "Número do Relatório",
 				"reportType": "Tipo de Relatório",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Direitos",
 				"runningTime": "Duração",
@@ -11337,6 +11620,7 @@
 		},
 		"ro-RO": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Lucrare de artă",
 				"attachment": "Anexă",
 				"audioRecording": "Înregistrare audio",
@@ -11368,6 +11652,7 @@
 				"note": "Notă",
 				"patent": "Brevet",
 				"podcast": "Multimedia",
+				"preprint": "Preprint",
 				"presentation": "Prezentare",
 				"radioBroadcast": "Emisiune radio",
 				"regulation": "Regulation",
@@ -11389,6 +11674,7 @@
 				"applicationNumber": "Număr aplicație",
 				"archive": "Arhivă",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Locație în arhivă",
 				"artworkMedium": "Mediu",
 				"artworkSize": "Mărime lucrare de artă",
@@ -11402,6 +11688,7 @@
 				"bookTitle": "Titlu carte",
 				"callNumber": "Număr de tel.",
 				"caseName": "Nume proces",
+				"citationKey": "Citation Key",
 				"code": "Cod",
 				"codeNumber": "Număr de cod",
 				"codePages": "Cod pagini",
@@ -11491,6 +11778,7 @@
 				"reporterVolume": "Volum reporter",
 				"reportNumber": "Număr raport",
 				"reportType": "Tip de raport",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Drepturi",
 				"runningTime": "Timp de funcționare",
@@ -11557,6 +11845,7 @@
 		},
 		"ru-RU": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Художественная работа",
 				"attachment": "Вложение",
 				"audioRecording": "Звукозапись",
@@ -11588,6 +11877,7 @@
 				"note": "Заметка",
 				"patent": "Патент",
 				"podcast": "Подкаст",
+				"preprint": "Preprint",
 				"presentation": "Презентация",
 				"radioBroadcast": "Радиопередача",
 				"regulation": "Regulation",
@@ -11609,6 +11899,7 @@
 				"applicationNumber": "Номер заявки",
 				"archive": "Архив",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Место в архиве",
 				"artworkMedium": "Худож. средство",
 				"artworkSize": "Размер работы",
@@ -11622,6 +11913,7 @@
 				"bookTitle": "Название книги",
 				"callNumber": "Шифр (номер вызова)",
 				"caseName": "Номер дела",
+				"citationKey": "Citation Key",
 				"code": "Кодекс/сборник",
 				"codeNumber": "Том кодекса",
 				"codePages": "Страницы кодекса",
@@ -11711,6 +12003,7 @@
 				"reporterVolume": "Том отчета",
 				"reportNumber": "Номер отчета",
 				"reportType": "Тип отчета",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Права",
 				"runningTime": "Продолжит.",
@@ -11777,6 +12070,7 @@
 		},
 		"sk-SK": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Umelecké dielo",
 				"attachment": "Príloha",
 				"audioRecording": "Audionahrávka",
@@ -11808,6 +12102,7 @@
 				"note": "Poznámka",
 				"patent": "Patent",
 				"podcast": "Podcast",
+				"preprint": "Preprint",
 				"presentation": "Prezentácia",
 				"radioBroadcast": "Rádio",
 				"regulation": "Regulation",
@@ -11829,6 +12124,7 @@
 				"applicationNumber": "Číslo prihlášky",
 				"archive": "Archív",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Lokácia",
 				"artworkMedium": "Médium",
 				"artworkSize": "Rozmery diela",
@@ -11842,6 +12138,7 @@
 				"bookTitle": "Názov knihy",
 				"callNumber": "Signatúra",
 				"caseName": "Názov prípadu",
+				"citationKey": "Citation Key",
 				"code": "Zákonník",
 				"codeNumber": "Kódové číslo",
 				"codePages": "Strany",
@@ -11931,6 +12228,7 @@
 				"reporterVolume": "Ročník",
 				"reportNumber": "Číslo správy",
 				"reportType": "Druh správy",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Práva",
 				"runningTime": "Dĺžka",
@@ -11997,6 +12295,7 @@
 		},
 		"sl-SI": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Umetniško delo",
 				"attachment": "Priponka",
 				"audioRecording": "Zvočni posnetek",
@@ -12028,6 +12327,7 @@
 				"note": "Opomba",
 				"patent": "Patent",
 				"podcast": "Podcast",
+				"preprint": "Preprint",
 				"presentation": "Predstavitev",
 				"radioBroadcast": "Radijska oddaja",
 				"regulation": "Regulation",
@@ -12049,6 +12349,7 @@
 				"applicationNumber": "Številka vloge",
 				"archive": "Arhiv",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Mesto v arhivu",
 				"artworkMedium": "Medij",
 				"artworkSize": "Velikost umetniškega dela",
@@ -12062,6 +12363,7 @@
 				"bookTitle": "Naslov knjige",
 				"callNumber": "Številka klica",
 				"caseName": "Ime primera",
+				"citationKey": "Citation Key",
 				"code": "Koda",
 				"codeNumber": "Številka kode",
 				"codePages": "Strani kode",
@@ -12151,6 +12453,7 @@
 				"reporterVolume": "Zbirka poročil",
 				"reportNumber": "Številka poročila",
 				"reportType": "Vrsta poročila",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Pravice",
 				"runningTime": "Dolžina",
@@ -12217,6 +12520,7 @@
 		},
 		"sr-RS": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Уметничко дело",
 				"attachment": "Прилог",
 				"audioRecording": "Звучни снимак",
@@ -12248,6 +12552,7 @@
 				"note": "Белешка",
 				"patent": "Патент",
 				"podcast": "Подкаст",
+				"preprint": "Preprint",
 				"presentation": "Презентација",
 				"radioBroadcast": "Радио пренос",
 				"regulation": "Regulation",
@@ -12269,6 +12574,7 @@
 				"applicationNumber": "Број апликације",
 				"archive": "Архива",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Место у архиви",
 				"artworkMedium": "Медијум",
 				"artworkSize": "Величина уметничког дела",
@@ -12282,6 +12588,7 @@
 				"bookTitle": "Наслов књиге",
 				"callNumber": "Сигнатура",
 				"caseName": "Број случаја",
+				"citationKey": "Citation Key",
 				"code": "Код",
 				"codeNumber": "Број кода",
 				"codePages": "Код страница",
@@ -12371,6 +12678,7 @@
 				"reporterVolume": "Том известиоца",
 				"reportNumber": "Број извештаја",
 				"reportType": "Врста извештаја",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Права",
 				"runningTime": "Дужина трајања",
@@ -12437,6 +12745,7 @@
 		},
 		"sv-SE": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Konstverk",
 				"attachment": "Bilaga",
 				"audioRecording": "Ljudinspelning",
@@ -12468,6 +12777,7 @@
 				"note": "Anteckning",
 				"patent": "Patent",
 				"podcast": "Poddsändning",
+				"preprint": "Preprint",
 				"presentation": "Presentation",
 				"radioBroadcast": "Radiosändning",
 				"regulation": "Regulation",
@@ -12489,6 +12799,7 @@
 				"applicationNumber": "Anmälningsnummer",
 				"archive": "Arkiv",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Plats i arkiv",
 				"artworkMedium": "Medium för konstverk",
 				"artworkSize": "Storlek på konstverk",
@@ -12502,6 +12813,7 @@
 				"bookTitle": "Boktitel",
 				"callNumber": "Hyllkod",
 				"caseName": "Rättsfallsnamn",
+				"citationKey": "Citation Key",
 				"code": "Författningssamling",
 				"codeNumber": "Författningsnummer",
 				"codePages": "Sidkod",
@@ -12591,6 +12903,7 @@
 				"reporterVolume": "Referattyp",
 				"reportNumber": "Rapportnummer",
 				"reportType": "Rapporttyp",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Rättigheter",
 				"runningTime": "Inspelningslängd",
@@ -12657,6 +12970,7 @@
 		},
 		"th-TH": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "งานศิลป์",
 				"attachment": "แฟ้มแนบ",
 				"audioRecording": "โสตวัสดุ",
@@ -12688,6 +13002,7 @@
 				"note": "บันทึก",
 				"patent": "สิทธิบัตร",
 				"podcast": "พอดคาสต์",
+				"preprint": "Preprint",
 				"presentation": "เอกสารการนำเสนอ",
 				"radioBroadcast": "รายการวิทยุ",
 				"regulation": "Regulation",
@@ -12709,6 +13024,7 @@
 				"applicationNumber": "หมายเลขคำขอ",
 				"archive": "เอกสารสำคัญ",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "ที่เก็บเอกสารสำคัญ",
 				"artworkMedium": "สื่อ",
 				"artworkSize": "ขนาดอาร์ตเวิร์ก",
@@ -12722,6 +13038,7 @@
 				"bookTitle": "ชื่อหนังสือ",
 				"callNumber": "หมายเลขหิ้งหนังสือ",
 				"caseName": "หมายเลขคดี",
+				"citationKey": "Citation Key",
 				"code": "ประมวลกฎหมาย",
 				"codeNumber": "หมายเลขประมวลกฎหมาย",
 				"codePages": "เลขหน้าประมวลกฎหมาย",
@@ -12811,6 +13128,7 @@
 				"reporterVolume": "รายงานเล่มที่",
 				"reportNumber": "หมายเลขรายงาน",
 				"reportType": "ประเภทรายงาน",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "ลิขสิทธิ์",
 				"runningTime": "ระยะเวลาเล่นต่อเนื่อง",
@@ -12877,6 +13195,7 @@
 		},
 		"tr-TR": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Sanat eseri",
 				"attachment": "Ek",
 				"audioRecording": "Ses Kaydı",
@@ -12908,6 +13227,7 @@
 				"note": "Not",
 				"patent": "Patent",
 				"podcast": "Podcast",
+				"preprint": "Preprint",
 				"presentation": "Sunum",
 				"radioBroadcast": "Radyo Yayını",
 				"regulation": "Regulation",
@@ -12929,6 +13249,7 @@
 				"applicationNumber": "Uygulama Numarası",
 				"archive": "Arşiv",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Arşivdeki Yeri",
 				"artworkMedium": "Sanat Eseri Ortamı",
 				"artworkSize": "Sanat Eserinin Boyutu",
@@ -12942,6 +13263,7 @@
 				"bookTitle": "Kitap Başlığı",
 				"callNumber": "Yer Numarası",
 				"caseName": "Dava Adı",
+				"citationKey": "Citation Key",
 				"code": "Kanun",
 				"codeNumber": "Kanun Numarası",
 				"codePages": "Kanun Sayfası",
@@ -13031,6 +13353,7 @@
 				"reporterVolume": "Raporlayon Kitabın Cildi",
 				"reportNumber": "Rapor Numarası",
 				"reportType": "Rapor Türü",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Telif",
 				"runningTime": "Çalma Süresi",
@@ -13097,6 +13420,7 @@
 		},
 		"uk-UA": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Витвір мистецтва",
 				"attachment": "Вкладення",
 				"audioRecording": "Аудіозапис",
@@ -13128,6 +13452,7 @@
 				"note": "Примітка",
 				"patent": "Патент",
 				"podcast": "Подкаст",
+				"preprint": "Preprint",
 				"presentation": "Презентація",
 				"radioBroadcast": "Радіо передача",
 				"regulation": "Regulation",
@@ -13149,6 +13474,7 @@
 				"applicationNumber": "Номер заявки",
 				"archive": "Архів",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Місце в архіві",
 				"artworkMedium": "Художній засіб",
 				"artworkSize": "Розмір роботи",
@@ -13162,6 +13488,7 @@
 				"bookTitle": "Назва книги",
 				"callNumber": "Шифр",
 				"caseName": "Номер справи",
+				"citationKey": "Citation Key",
 				"code": "Код",
 				"codeNumber": "Номер коду",
 				"codePages": "Код сторінки",
@@ -13251,6 +13578,7 @@
 				"reporterVolume": "Том звіту",
 				"reportNumber": "Номер звіту",
 				"reportType": "Тип звіту",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Права",
 				"runningTime": "Тривалість",
@@ -13317,6 +13645,7 @@
 		},
 		"vi-VN": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "Minh họa",
 				"attachment": "Phần đính kèm",
 				"audioRecording": "Ghi âm",
@@ -13348,6 +13677,7 @@
 				"note": "Ghi chép",
 				"patent": "Bằng sáng chế/Giấy phép độc quyền",
 				"podcast": "Podcast",
+				"preprint": "Preprint",
 				"presentation": "Trình bày",
 				"radioBroadcast": "Tiết mục Truyền thanh",
 				"regulation": "Regulation",
@@ -13369,6 +13699,7 @@
 				"applicationNumber": "Số đơn",
 				"archive": "Lưu",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "Vị trí trong Lưu trữ",
 				"artworkMedium": "Chất liệu của tác phẩm",
 				"artworkSize": "Kích thước tác phẩm",
@@ -13382,6 +13713,7 @@
 				"bookTitle": "Nhan đề sách",
 				"callNumber": "Ký hiệu Xếp giá",
 				"caseName": "Tên của Vụ việc",
+				"citationKey": "Citation Key",
 				"code": "Mã",
 				"codeNumber": "Code Number",
 				"codePages": "Trang",
@@ -13471,6 +13803,7 @@
 				"reporterVolume": "Tập Báo cáo Luật",
 				"reportNumber": "Số Phóng sự/Báo cáo",
 				"reportType": "Kiểu Phóng sự/Báo cáo",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "Quyền hạn",
 				"runningTime": "Độ dài Thời gian",
@@ -13537,6 +13870,7 @@
 		},
 		"zh-CN": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "艺术品",
 				"attachment": "附件",
 				"audioRecording": "音频剪辑",
@@ -13568,6 +13902,7 @@
 				"note": "笔记",
 				"patent": "专利",
 				"podcast": "播客",
+				"preprint": "Preprint",
 				"presentation": "演示文档",
 				"radioBroadcast": "电台广播",
 				"regulation": "Regulation",
@@ -13589,6 +13924,7 @@
 				"applicationNumber": "申请号",
 				"archive": "档案",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "存档位置",
 				"artworkMedium": "艺术品媒介",
 				"artworkSize": "艺术品尺寸",
@@ -13602,6 +13938,7 @@
 				"bookTitle": "书名",
 				"callNumber": "引用次数",
 				"caseName": "案例名称",
+				"citationKey": "Citation Key",
 				"code": "代码",
 				"codeNumber": "区号",
 				"codePages": "代码页码",
@@ -13691,6 +14028,7 @@
 				"reporterVolume": "报告卷",
 				"reportNumber": "报告编号",
 				"reportType": "报告类型",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "版权",
 				"runningTime": "时长",
@@ -13757,6 +14095,7 @@
 		},
 		"zh-TW": {
 			"itemTypes": {
+				"annotation": "Annotation",
 				"artwork": "藝術作品",
 				"attachment": "附件檔",
 				"audioRecording": "錄音",
@@ -13788,6 +14127,7 @@
 				"note": "筆記",
 				"patent": "專利",
 				"podcast": "播客",
+				"preprint": "Preprint",
 				"presentation": "簡報",
 				"radioBroadcast": "電台廣播",
 				"regulation": "Regulation",
@@ -13809,6 +14149,7 @@
 				"applicationNumber": "申請號碼",
 				"archive": "存庫",
 				"archiveCollection": "Archive Coll.",
+				"archiveID": "Archive ID",
 				"archiveLocation": "文件庫中的位置",
 				"artworkMedium": "中",
 				"artworkSize": "藝術作品大小",
@@ -13822,6 +14163,7 @@
 				"bookTitle": "書名",
 				"callNumber": "索書號",
 				"caseName": "案件名稱",
+				"citationKey": "Citation Key",
 				"code": "法規(code)",
 				"codeNumber": "法規(code)編號",
 				"codePages": "法規(code)頁次",
@@ -13911,6 +14253,7 @@
 				"reporterVolume": "報告人卷次",
 				"reportNumber": "報告編號",
 				"reportType": "報告類型",
+				"repository": "Repository",
 				"resolutionLabel": "Resol. Label",
 				"rights": "權利",
 				"runningTime": "播放時間",
