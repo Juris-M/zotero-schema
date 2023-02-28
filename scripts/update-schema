@@ -4,6 +4,10 @@
 //
 // This should be run from the submodule in the zotero/zotero repo after
 // modifying types, fields, or localized strings.
+//
+// In addition, this will apply changes specified in schema-jurism-patch.json
+// to schema.json to produce schema-jurism.json, the schema file that
+// controls database creation and other structures in the Jurism derivative.
 
 const path = require('path');
 const fs = require('fs');
