@@ -1,5 +1,5 @@
 {
-	"version": 39,
+	"version": 45,
 	"itemTypes": [
 		{
 			"itemType": "annotation",
@@ -191,59 +191,16 @@
 					"field": "title"
 				},
 				{
-					"field": "reporter",
-					"baseField": "publicationTitle"
-				},
-				{
-					"field": "billNumber",
-					"baseField": "number"
-				},
-				{
-					"field": "code"
-				},
-				{
-					"field": "codeVolume",
-					"baseField": "volume"
-				},
-				{
-					"field": "section"
-				},
-				{
-					"field": "codePages",
-					"baseField": "pages"
-				},
-				{
-					"field": "legislativeBody"
-				},
-				{
-					"field": "session"
-				},
-				{
-					"field": "history"
-				},
-				{
-					"field": "date"
-				},
-				{
 					"field": "abstractNote"
 				},
 				{
-					"field": "url"
-				},
-				{
-					"field": "accessDate"
+					"field": "jurisdiction"
 				},
 				{
 					"field": "shortTitle"
 				},
 				{
-					"field": "rights"
-				},
-				{
-					"field": "extra"
-				},
-				{
-					"field": "jurisdiction"
+					"field": "legislativeBody"
 				},
 				{
 					"field": "resolutionLabel"
@@ -257,10 +214,53 @@
 					"baseField": "type"
 				},
 				{
+					"field": "session"
+				},
+				{
+					"field": "billNumber",
+					"baseField": "number"
+				},
+				{
+					"field": "date"
+				},
+				{
+					"field": "section"
+				},
+				{
 					"field": "archiveLocation"
 				},
 				{
+					"field": "code"
+				},
+				{
+					"field": "codeVolume",
+					"baseField": "volume"
+				},
+				{
+					"field": "codePages",
+					"baseField": "pages"
+				},
+				{
 					"field": "language"
+				},
+				{
+					"field": "url"
+				},
+				{
+					"field": "accessDate"
+				},
+				{
+					"field": "history"
+				},
+				{
+					"field": "rights"
+				},
+				{
+					"field": "extra"
+				},
+				{
+					"field": "reporter",
+					"baseField": "publicationTitle"
 				}
 			],
 			"creatorTypes": [
@@ -1412,68 +1412,41 @@
 					"field": "title"
 				},
 				{
-					"field": "volume"
-				},
-				{
-					"field": "committee"
-				},
-				{
-					"field": "place"
-				},
-				{
-					"field": "publisher"
-				},
-				{
-					"field": "numberOfVolumes"
-				},
-				{
-					"field": "documentNumber"
-				},
-				{
-					"field": "pages"
-				},
-				{
-					"field": "legislativeBody"
-				},
-				{
-					"field": "session"
-				},
-				{
-					"field": "history"
-				},
-				{
-					"field": "date"
-				},
-				{
-					"field": "language"
-				},
-				{
 					"field": "abstractNote"
-				},
-				{
-					"field": "url"
-				},
-				{
-					"field": "accessDate"
-				},
-				{
-					"field": "rights"
-				},
-				{
-					"field": "extra"
 				},
 				{
 					"field": "jurisdiction"
 				},
 				{
-					"field": "assemblyNumber"
+					"field": "shortTitle"
+				},
+				{
+					"field": "committee"
+				},
+				{
+					"field": "meetingNumber"
+				},
+				{
+					"field": "legislativeBody"
 				},
 				{
 					"field": "resolutionLabel"
 				},
 				{
+					"field": "assemblyNumber"
+				},
+				{
 					"field": "sessionType",
 					"baseField": "type"
+				},
+				{
+					"field": "session"
+				},
+				{
+					"field": "documentNumber"
+				},
+				{
+					"field": "date"
 				},
 				{
 					"field": "archiveLocation"
@@ -1483,13 +1456,40 @@
 					"baseField": "publicationTitle"
 				},
 				{
+					"field": "publisher"
+				},
+				{
+					"field": "language"
+				},
+				{
+					"field": "url"
+				},
+				{
+					"field": "accessDate"
+				},
+				{
+					"field": "numberOfVolumes"
+				},
+				{
+					"field": "history"
+				},
+				{
+					"field": "place"
+				},
+				{
+					"field": "pages"
+				},
+				{
+					"field": "rights"
+				},
+				{
+					"field": "extra"
+				},
+				{
 					"field": "meetingName"
 				},
 				{
-					"field": "meetingNumber"
-				},
-				{
-					"field": "shortTitle"
+					"field": "volume"
 				}
 			],
 			"creatorTypes": [
@@ -2365,10 +2365,10 @@
 			"itemType": "preprint",
 			"fields": [
 				{
-					"field": "citationKey"
+					"field": "title"
 				},
 				{
-					"field": "title"
+					"field": "abstractNote"
 				},
 				{
 					"field": "genre",
@@ -2398,7 +2398,7 @@
 					"field": "DOI"
 				},
 				{
-					"field": "abstractNote"
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -3058,9 +3058,6 @@
 					"field": "adoptionDate"
 				},
 				{
-					"field": "versionNumber"
-				},
-				{
 					"field": "signingDate"
 				},
 				{
@@ -3098,6 +3095,9 @@
 				},
 				{
 					"field": "extra"
+				},
+				{
+					"field": "versionNumber"
 				}
 			],
 			"creatorTypes": [
@@ -3562,10 +3562,6 @@
 				"event-place": [
 					"place"
 				],
-				"event-title": [
-					"meetingName",
-					"conferenceName"
-				],
 				"genre": [
 					"type",
 					"programmingLanguage",
@@ -3681,7 +3677,9 @@
 					"publicationNumber"
 				],
 				"event": [
-					"resolutionLabel"
+					"resolutionLabel",
+					"meetingName",
+					"conferenceName"
 				],
 				"supplement": [
 					"supplementName"
