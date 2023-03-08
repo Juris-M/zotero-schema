@@ -50,16 +50,29 @@ async function run() {
 	
 // Apply Jurism changes
 
-   // CSL fields
+	// CSL fields
+	var deletes = [];
+    for (var cslField in patch.CSL_FIELDS) {
+		if (patch.CSL_FIELDS[cslField].length == 0) {
+			console.log("FLAGGING FOR DELETE");
+			deletes.push(cslField);
+		}
+	}
+	for (var cslField of deletes) {
+		if (data.csl.fields.text[cslField]) {
+			delete data.csl.fields.text[cslField];
+		}
+		delete patch.CSL_FIELDS[cslField];
+	}
     for (var cslField in patch.CSL_FIELDS) {
         if (!data.csl.fields.text[cslField]) {
 	        data.csl.fields.text[cslField] = [];
 	    }
 	    for (var zField of patch.CSL_FIELDS[cslField]) {
-	        if (data.csl.fields.text[cslField].indexOf(zField) === -1) {
-	            data.csl.fields.text[cslField].push(zField);
-	        }
-	    }
+			if (data.csl.fields.text[cslField].indexOf(zField) === -1) {
+				data.csl.fields.text[cslField].push(zField);
+			}
+		}
     }
     for (var cslDate in data.csl.fields.date) {
         if ("string" === typeof data.csl.fields.date[cslDate]) {
