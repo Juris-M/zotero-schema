@@ -1,5 +1,5 @@
 {
-	"version": 45,
+	"version": 46,
 	"itemTypes": [
 		{
 			"itemType": "annotation",
@@ -3562,6 +3562,11 @@
 				"event-place": [
 					"place"
 				],
+				"event-title": [
+					"meetingName",
+					"conferenceName",
+					"resolutionLabel"
+				],
 				"genre": [
 					"type",
 					"programmingLanguage",
@@ -3675,11 +3680,6 @@
 				],
 				"publication-number": [
 					"publicationNumber"
-				],
-				"event": [
-					"resolutionLabel",
-					"meetingName",
-					"conferenceName"
 				],
 				"supplement": [
 					"supplementName"

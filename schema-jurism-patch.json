@@ -1158,8 +1158,7 @@
 		"publication-number": [
 			"publicationNumber"
 		],
-		"event-title":[],
-		"event": [
+		"event-title": [
 			"resolutionLabel",
 			"meetingName",
 			"conferenceName"
