@@ -48,12 +48,10 @@ async function run() {
     // WARNING: removing base field "publisher" from "institution"
     // on "report" to avoid data loss.
     for (var itemTypeInfo of data.itemTypes) {
-        if (itemTypeInfo.itemType === "report") {
-            for (var fieldInfo of itemTypeInfo.fields) {
-                if (fieldInfo.field === "institution") {
-                    console.log("Removing baseField from \"institution\" field of \"report\" type");
-                    delete fieldInfo.field.baseField;
-                }
+        for (var fieldInfo of itemTypeInfo.fields) {
+            if (["court", "legislativeBody", "issuingAuthority", "institution", "regulatoryBody"].indexOf(fieldInfo.field) > -1) {
+                console.log("Removing baseField from \"" + fieldInfo.field + "\"");
+                delete fieldInfo.field.baseField;
             }
         }
     }
