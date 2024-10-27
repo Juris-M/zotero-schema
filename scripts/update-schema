@@ -44,7 +44,20 @@ async function run() {
 	// Zotero source to be patched
 	var oldJSON = fs.readFileSync('schema.json').toString();
 	var data = JSON.parse(oldJSON);
-	
+
+    // WARNING: removing base field "publisher" from "institution"
+    // on "report" to avoid data loss.
+    for (var itemTypeInfo of data.itemTypes) {
+        if (itemTypeInfo.itemType === "report") {
+            for (var fieldInfo of itemTypeInfo.fields) {
+                if (fieldInfo.field === "institution") {
+                    console.log("Removing baseField from \"institution\" field of \"report\" type");
+                    delete fieldInfo.field.baseField;
+                }
+            }
+        }
+    }
+    
 	// Remove stale CSL JSON mapping. Patch contains a substitute.
 	delete data.csl.fields.text.journalAbbreviation
 	
