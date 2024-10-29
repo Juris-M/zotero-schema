@@ -561,8 +561,7 @@
 					"field": "division"
 				},
 				{
-					"field": "docketNumber",
-					"baseField": "number"
+					"field": "docketNumber"
 				},
 				{
 					"field": "documentName"
@@ -1523,8 +1522,7 @@
 					"field": "session"
 				},
 				{
-					"field": "documentNumber",
-					"baseField": "number"
+					"field": "documentNumber"
 				},
 				{
 					"field": "pages"
@@ -2959,10 +2957,10 @@
 					"creatorType": "editor"
 				},
 				{
-					"creatorType": "translator"
+					"creatorType": "reviewedAuthor"
 				},
 				{
-					"creatorType": "reviewedAuthor"
+					"creatorType": "translator"
 				}
 			]
 		},
@@ -3613,6 +3611,9 @@
 			],
 			"legal_commentary": [
 				"legalCommentary"
+			],
+			"video": [
+				"videoRecording"
 			]
 		},
 		"fields": {
@@ -3629,7 +3630,10 @@
 				"authority": [
 					"authority",
 					"institution",
-					"regulatoryBody"
+					"regulatoryBody",
+					"legislativeBody",
+					"issuingAuthority",
+					"court"
 				],
 				"call-number": [
 					"callNumber",
@@ -3705,7 +3709,8 @@
 					"extra"
 				],
 				"number": [
-					"number"
+					"number",
+					"docketNumber"
 				],
 				"number-of-pages": [
 					"numPages"
