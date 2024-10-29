@@ -1,5 +1,5 @@
 {
-	"version": 47,
+	"version": 48,
 	"itemTypes": [
 		{
 			"itemType": "annotation",
@@ -3556,8 +3556,7 @@
 				"map"
 			],
 			"motion_picture": [
-				"film",
-				"videoRecording"
+				"film"
 			],
 			"paper-conference": [
 				"conferencePaper"
