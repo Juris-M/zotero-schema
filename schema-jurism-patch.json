@@ -19,6 +19,10 @@
     "legalCommentary": {
       "zotero": "bookSection",
       "csl": "legal_commentary"
+    },
+    "videoRecording": {
+      "zotero": "videoRecording",
+      "csl": "video"
     }
   },
   "CREATORS": {
@@ -44,8 +48,8 @@
     ],
     "standard": [
       "editor",
-      "translator",
-      "reviewedAuthor"
+      "reviewedAuthor",
+      "translator"
     ],
     "statute": [
       "translator"
@@ -364,8 +368,7 @@
         "field": "jurisdiction"
       },
       {
-        "field": "regulatoryBody",
-        "baseField": "legislativeBody"
+        "field": "regulatoryBody"
       },
       {
         "field": "regulationType",
@@ -1402,7 +1405,14 @@
     ],
     "authority": [
       "institution",
-      "regulatoryBody"
+      "regulatoryBody",
+      "legislativeBody",
+      "issuingAuthority",
+      "court"
+    ],
+    "number": [
+      "number",
+      "docketNumber"
     ],
     "jurisdiction": [
       "jurisdiction"
