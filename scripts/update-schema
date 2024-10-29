@@ -49,7 +49,7 @@ async function run() {
     // on "report" to avoid data loss.
     for (var itemTypeInfo of data.itemTypes) {
         for (var fieldInfo of itemTypeInfo.fields) {
-            if (["court", "legislativeBody", "issuingAuthority", "institution", "regulatoryBody"].indexOf(fieldInfo.field) > -1) {
+            if (["court", "legislativeBody", "issuingAuthority", "institution", "regulatoryBody", "documentNumber"].indexOf(fieldInfo.field) > -1) {
                 console.log("Removing baseField from \"" + fieldInfo.field + "\"");
                 delete fieldInfo.field.baseField;
             }
