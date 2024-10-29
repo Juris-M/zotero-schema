@@ -45,17 +45,17 @@ async function run() {
 	var oldJSON = fs.readFileSync('schema.json').toString();
 	var data = JSON.parse(oldJSON);
 
-    // WARNING: removing base field "publisher" from "institution"
-    // on "report" to avoid data loss.
+    // PRE-PROCESSED HACKS TO CURRENT ZOTERO ORIGINAL
+    // Remove baseField association from selected fields
     for (var itemTypeInfo of data.itemTypes) {
         for (var fieldInfo of itemTypeInfo.fields) {
-            if (["court", "legislativeBody", "issuingAuthority", "institution", "regulatoryBody", "documentNumber"].indexOf(fieldInfo.field) > -1) {
+            if (["court", "legislativeBody", "issuingAuthority", "institution", "regulatoryBody", "documentNumber", "docketNumber"].indexOf(fieldInfo.field) > -1) {
                 console.log("Removing baseField from \"" + fieldInfo.field + "\"");
-                delete fieldInfo.field.baseField;
+                delete fieldInfo.baseField;
             }
         }
     }
-    
+
 	// Remove stale CSL JSON mapping. Patch contains a substitute.
 	delete data.csl.fields.text.journalAbbreviation
 	
@@ -116,7 +116,7 @@ async function run() {
 
     // Types
     for (var type in patch.TYPES) {
-        // Override if present
+        // Remove if present
         for (var oldCslType in data.csl.types) {
             var idx = data.csl.types[oldCslType].indexOf(type);
             if (idx > -1) {
