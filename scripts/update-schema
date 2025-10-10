@@ -302,9 +302,9 @@ async function run() {
 			strings.set(key, str);
 		}
 		
-		data.locales[locale].itemTypes = getLocalizedStrings(locale, strings, 'itemTypes', itemTypes);
-		data.locales[locale].fields = getLocalizedStrings(locale, strings, 'itemFields', fields);
-		data.locales[locale].creatorTypes = getLocalizedStrings(locale, strings, 'creatorTypes', creatorTypes);
+		data.locales[locale].itemTypes = getLocalizedStrings(strings, 'itemTypes', itemTypes);
+		data.locales[locale].fields = getLocalizedStrings(strings, 'itemFields', fields);
+		data.locales[locale].creatorTypes = getLocalizedStrings(strings, 'creatorTypes', creatorTypes);
 	}
 	
 	// Write new file with adjusted version
@@ -320,7 +320,7 @@ async function run() {
 	}
 }
 
-function getLocalizedStrings(locale, strings, prefix, subjects) {
+function getLocalizedStrings(strings, prefix, subjects) {
 	var data = {};
 	for (let subject of subjects) {
 		let key = prefix + '.' + subject;
@@ -335,6 +335,14 @@ function getLocalizedStrings(locale, strings, prefix, subjects) {
 		}
 		data[subject] = strings.get(key);
 	}
+    // [Jurism] HACK: committeeFullname was removed from all item types,
+    // but entries for it still exist in zotero.properties. As it has
+    // not yet been properly merged into committee, there is a risk that
+    // an item will attempt to call it, and we therefore force it into
+    // the field locale listing here.
+    if (prefix == "itemFields" && !data.committeeFullname) {
+        data.committeeFullname = "Committee";
+    }
 	return data;
 }
 

@@ -1,5 +1,5 @@
 {
-	"version": 48,
+	"version": 49,
 	"itemTypes": [
 		{
 			"itemType": "annotation",
@@ -4046,7 +4046,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Website Title",
 				"websiteType": "Website Type",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Artist",
@@ -4278,7 +4279,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "اسم موقع الويب",
 				"websiteType": "نوع موقع الويب",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "الفنان",
@@ -4510,7 +4512,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Заглавие на интернет страница",
 				"websiteType": "Вид интернет страницата",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Създател",
@@ -4742,7 +4745,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Titl al lec'hienn",
 				"websiteType": "Doare lec'hienn Web",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Arzour",
@@ -4974,7 +4978,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Títol del web",
 				"websiteType": "Tipus de pàgina web",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Artista",
@@ -5206,7 +5211,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Název stránky",
 				"websiteType": "Typ webové stránky",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Výtvarník",
@@ -5438,7 +5444,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Webstedets titel",
 				"websiteType": "Type (websted)",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Kunstner/Ophav",
@@ -5670,7 +5677,8 @@
 				"volumeTitle": "Bandtitel",
 				"websiteTitle": "Titel der Website",
 				"websiteType": "Art der Webseite",
-				"yearAsVolume": "Jahr als Bandnr."
+				"yearAsVolume": "Jahr als Bandnr.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Künstler",
@@ -5902,7 +5910,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Website Title",
 				"websiteType": "Website Type",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Artist",
@@ -6134,7 +6143,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Website Title",
 				"websiteType": "Website Type",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Artist",
@@ -6366,7 +6376,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Website Title",
 				"websiteType": "Website Type",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Artist",
@@ -6598,7 +6609,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Título de página web",
 				"websiteType": "Tipo de página Web",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Artista",
@@ -6830,7 +6842,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Veebilehekülje pealkiri",
 				"websiteType": "Veebilehe tüüp",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Kunstnik",
@@ -7062,7 +7075,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Web-orriaren izenburua",
 				"websiteType": "Orrialde mota",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Artista",
@@ -7294,7 +7308,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "عنوان وب‌گاه",
 				"websiteType": "نوع وب‌گاه",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "هنرمند",
@@ -7526,7 +7541,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Websivu",
 				"websiteType": "Web-sivustotyyppi",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Taiteilija",
@@ -7758,7 +7774,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Titre du site Web",
 				"websiteType": "Type de site Web",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Artiste",
@@ -7990,7 +8007,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Título da páxina web",
 				"websiteType": "Tipo de páxina web",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Artista",
@@ -8222,7 +8240,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "כותרת אתר",
 				"websiteType": "סוג אתר",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "אומן",
@@ -8454,7 +8473,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Website Title",
 				"websiteType": "Website Type",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Artist",
@@ -8686,7 +8706,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Website címe",
 				"websiteType": "Weboldal típusa",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Művész",
@@ -8918,7 +8939,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Judul Website",
 				"websiteType": "Jenis Website",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Seniman",
@@ -9150,7 +9172,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Titill vefsíðu",
 				"websiteType": "Tegund vefs",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Listamaður",
@@ -9382,7 +9405,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Nome del sito",
 				"websiteType": "Tipo di sito web",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Artista",
@@ -9614,7 +9638,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "ウェブサイト名",
 				"websiteType": "ウェブサイトの種類",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "アーティスト",
@@ -9846,7 +9871,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "ចំណងជើងគេហទំព័រ",
 				"websiteType": "ប្រភេទគេហទំព័រ",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "សិល្បករ",
@@ -10078,7 +10104,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "웹사이트 명",
 				"websiteType": "웹사이트 형식",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "예술가",
@@ -10310,7 +10337,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Svetainės pavadinimas",
 				"websiteType": "Svetainės tipas",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Menininkas/aktorius",
@@ -10542,7 +10570,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Вэб сайтын гарчиг",
 				"websiteType": "Вэб сайтын төрөл",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Artist",
@@ -10774,7 +10803,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Nettsidens tittel",
 				"websiteType": "Nettstedtype",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Artist",
@@ -11006,7 +11036,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Titel webpagina",
 				"websiteType": "Type website",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Kunstenaar",
@@ -11238,7 +11269,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Nettstadtittel",
 				"websiteType": "Nettstadtype",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Artist",
@@ -11470,7 +11502,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Tytuł strony",
 				"websiteType": "Typ witryny",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Artysta",
@@ -11702,7 +11735,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Título do site",
 				"websiteType": "Tipo de site",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Artista",
@@ -11934,7 +11968,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Título da Página Web",
 				"websiteType": "Tipo de Página Web",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Artista",
@@ -12166,7 +12201,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Titlu site web",
 				"websiteType": "Tip de site web",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Artist",
@@ -12398,7 +12434,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Назв. веб-сайта",
 				"websiteType": "Тип веб-сайта",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Художник",
@@ -12630,7 +12667,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Názov stránky",
 				"websiteType": "Druh sídla",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Umelec",
@@ -12862,7 +12900,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Naslov spletne strani",
 				"websiteType": "Vrsta spletnega mesta",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Umetnik",
@@ -13094,7 +13133,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Наслов веб странице",
 				"websiteType": "Врста веб места",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Уметник",
@@ -13326,7 +13366,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Titel på webbplats",
 				"websiteType": "Webbplatstyp",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Konstnär",
@@ -13558,7 +13599,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "ชื่อเว็บไซต์",
 				"websiteType": "ประเภทเว็บไซต์",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "ศิลปิน",
@@ -13790,7 +13832,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Web sitesi Başlığı",
 				"websiteType": "Website Türü",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Sanatçı",
@@ -14022,7 +14065,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Назва веб-сайту\\n",
 				"websiteType": "Тип веб-сайту",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Художник",
@@ -14254,7 +14298,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "Tên Website",
 				"websiteType": "Kiểu Website",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "Nghệ sĩ",
@@ -14486,7 +14531,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "网站标题",
 				"websiteType": "网站类型",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "艺术家",
@@ -14718,7 +14764,8 @@
 				"volumeTitle": "Volume Title",
 				"websiteTitle": "網站標題",
 				"websiteType": "網站類型",
-				"yearAsVolume": "Year As Vol."
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
 			},
 			"creatorTypes": {
 				"artist": "藝術家",
