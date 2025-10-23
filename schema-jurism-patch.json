@@ -92,6 +92,10 @@
         "field": "resolutionLabel"
       },
       {
+        "field": "legislativeBody",
+        "baseField": "authority"
+      },
+      {
         "field": "assemblyNumber",
         "baseField": "seriesNumber"
       },
@@ -368,7 +372,8 @@
         "field": "jurisdiction"
       },
       {
-        "field": "regulatoryBody"
+          "field": "regulatoryBody",
+          "baseField": "authority"
       },
       {
         "field": "regulationType",
@@ -1388,7 +1393,7 @@
     "document-name": [
       "documentName"
     ],
-    "document-number": [
+    "publication-number": [
       "documentNumber"
     ],
     "admin-flag": [
@@ -1404,11 +1409,7 @@
       "regulationType"
     ],
     "authority": [
-      "institution",
-      "regulatoryBody",
-      "legislativeBody",
-      "issuingAuthority",
-      "court"
+      "institution"
     ],
     "number": [
       "number",

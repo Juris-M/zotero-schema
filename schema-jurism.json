@@ -1,5 +1,5 @@
 {
-	"version": 49,
+	"version": 54,
 	"itemTypes": [
 		{
 			"itemType": "annotation",
@@ -200,7 +200,8 @@
 					"field": "shortTitle"
 				},
 				{
-					"field": "legislativeBody"
+					"field": "legislativeBody",
+					"baseField": "authority"
 				},
 				{
 					"field": "resolutionLabel"
@@ -555,13 +556,15 @@
 					"field": "jurisdiction"
 				},
 				{
-					"field": "court"
+					"field": "court",
+					"baseField": "authority"
 				},
 				{
 					"field": "division"
 				},
 				{
-					"field": "docketNumber"
+					"field": "docketNumber",
+					"baseField": "number"
 				},
 				{
 					"field": "documentName"
@@ -1506,7 +1509,8 @@
 					"field": "meetingNumber"
 				},
 				{
-					"field": "legislativeBody"
+					"field": "legislativeBody",
+					"baseField": "authority"
 				},
 				{
 					"field": "resolutionLabel"
@@ -2298,7 +2302,8 @@
 					"field": "genre"
 				},
 				{
-					"field": "issuingAuthority"
+					"field": "issuingAuthority",
+					"baseField": "authority"
 				},
 				{
 					"field": "place"
@@ -2697,7 +2702,8 @@
 					"field": "jurisdiction"
 				},
 				{
-					"field": "regulatoryBody"
+					"field": "regulatoryBody",
+					"baseField": "authority"
 				},
 				{
 					"field": "regulationType",
@@ -3628,11 +3634,7 @@
 				],
 				"authority": [
 					"authority",
-					"institution",
-					"regulatoryBody",
-					"legislativeBody",
-					"issuingAuthority",
-					"court"
+					"institution"
 				],
 				"call-number": [
 					"callNumber",
@@ -3771,8 +3773,8 @@
 				"document-name": [
 					"documentName"
 				],
-				"document-number": [
-					"documentNumber"
+				"publication-number": [
+					"publicationNumber"
 				],
 				"admin-flag": [
 					"adminFlag"
@@ -3785,9 +3787,6 @@
 				],
 				"committee": [
 					"committee"
-				],
-				"publication-number": [
-					"publicationNumber"
 				],
 				"supplement": [
 					"supplementName"
@@ -13400,6 +13399,239 @@
 				"testimonyBy": "Testimony By",
 				"translator": "Översättare",
 				"wordsBy": "Text av"
+			}
+		},
+		"ta": {
+			"itemTypes": {
+				"annotation": "சிறுகுறி",
+				"artwork": "கலைபடைப்பு",
+				"attachment": "இணைப்பு",
+				"audioRecording": "ஆடியோ பதிவு",
+				"bill": "உறுதிச்சீட்டு",
+				"blogPost": "வலைதளப்பதிவு",
+				"book": "நூல்",
+				"bookSection": "புத்தகப் பிரிவு",
+				"case": "வழக்கு",
+				"classic": "Classic",
+				"computerProgram": "மென்பொருள்",
+				"conferencePaper": "மாநாட்டு தாள்",
+				"dataset": "தரவுத்தொகுப்பு",
+				"dictionaryEntry": "அகராதி பதிவுகுறிப்பு",
+				"document": "ஆவணம்",
+				"email": "மின்னஞ்சல்",
+				"encyclopediaArticle": "கலைக்களஞ்சிய கட்டுரை",
+				"film": "படம்",
+				"forumPost": "மன்ற இடுகை",
+				"gazette": "Gazette",
+				"hearing": "கேட்பு",
+				"instantMessage": "உடனடி செய்தி",
+				"interview": "நேர்காணல்",
+				"journalArticle": "செய்தித் தாள் கட்டுரை",
+				"legalCommentary": "Legal Commentary",
+				"letter": "கடிதம்",
+				"magazineArticle": "செய்தித் தாள் கட்டுரை",
+				"manuscript": "கைஉரை",
+				"map": "வரைபடம்",
+				"newspaperArticle": "செய்தித்தாள் கட்டூரை",
+				"note": "குறிப்பு",
+				"patent": "காப்புரிமை",
+				"podcast": "வலையொளி",
+				"preprint": "முன்அச்சு",
+				"presentation": "விளக்கக்காட்சி",
+				"radioBroadcast": "வானொலி ஒளிபரப்பு",
+				"regulation": "Regulation",
+				"report": "அறிக்கை",
+				"standard": "தரநிலை",
+				"statute": "சட்டம்",
+				"thesis": "ஆய்வறிக்கை",
+				"treaty": "Treaty",
+				"tvBroadcast": "தொகா ஒளிபரப்பு",
+				"videoRecording": "காணொலி காட்சி பதிவு",
+				"webpage": "வலைப்பக்கம்"
+			},
+			"fields": {
+				"abstractNote": "சுருக்கம்",
+				"accessDate": "அணுகப்பட்டது",
+				"adminFlag": "Admin Flag",
+				"adoptionDate": "Date Adopted",
+				"album": "Album",
+				"applicationNumber": "விண்ணப்ப எண்",
+				"archive": "காப்பகம்",
+				"archiveCollection": "Archive Coll.",
+				"archiveID": "காப்பக அடையாளம்",
+				"archiveLocation": "இடம். காப்பகத்தில்",
+				"artworkMedium": "சராசரி",
+				"artworkSize": "கலைப்படைப்பு அளவு",
+				"assemblyNumber": "Assy. No.",
+				"assignee": "ஒதுக்கப்பட்டவர்",
+				"audioFileType": "கோப்பு வகை",
+				"audioRecordingFormat": "வடிவம்",
+				"authority": "அதிகாரம்",
+				"billNumber": "உறுதிச்சீட்டு எண்",
+				"blogTitle": "வலைப்பதிவு தலைப்பு",
+				"bookAbbreviation": "Book Abbr",
+				"bookTitle": "புத்தக தலைப்பு",
+				"callNumber": "அழைப்பு எண்",
+				"caseName": "வழக்கு பெயர்",
+				"citationKey": "மேற்கோள் திறவுகோல்",
+				"code": "குறியீடு",
+				"codeNumber": "குறியீட்டு எண்",
+				"codePages": "குறியீடு பக்கங்கள்",
+				"codeVolume": "குறியீடு தொகுதி",
+				"committee": "குழு",
+				"company": "நிறுவனம்",
+				"conferenceDate": "Conf. Date",
+				"conferenceName": "மாநாட்டு பெயர்",
+				"country": "நாடு",
+				"court": "அறமன்றம்",
+				"date": "திகதி",
+				"dateAdded": "தேதி சேர்க்கப்பட்டது",
+				"dateAmended": "Date Amended",
+				"dateDecided": "தேதி தீர்மானிக்கப்பட்டது",
+				"dateEnacted": "தேதி இயற்றப்பட்டது",
+				"dateModified": "மாற்றப்பட்டது",
+				"dictionaryTitle": "அகராதி தலைப்பு",
+				"distributor": "பரப்பி",
+				"division": "Division",
+				"docketNumber": "டாக்கெட் எண்",
+				"documentName": "Document Name",
+				"documentNumber": "ஆவண எண்",
+				"DOI": "வதே",
+				"edition": "பதிப்பு",
+				"encyclopediaTitle": "கலைக்களஞ்சிய தலைப்பு",
+				"episodeNumber": "அத்தியாயம் எண்",
+				"extra": "கூடுதல்",
+				"filingDate": "தாக்கல் தேதி",
+				"firstPage": "முதல் பக்கம்",
+				"format": "வடிவம்",
+				"forumTitle": "மன்றம்/பட்டியல் தலைப்பு",
+				"gazetteFlag": "Gazette Ref",
+				"genre": "வகை",
+				"history": "வரலாறு",
+				"identifier": "அடையாளங்காட்டி",
+				"institution": "நிறுவனம்",
+				"interviewMedium": "சராசரி",
+				"ISBN": "ஐஎச்பிஎன்",
+				"ISSN": "ஐஎச்எச்என்",
+				"issue": "சிக்கல்",
+				"issueDate": "வெளியீட்டு தேதி",
+				"issuingAuthority": "அதிகாரம் வழங்குதல்",
+				"itemType": "உருப்படி வகை",
+				"journalAbbreviation": "செய்தித்தாள் சுருக்கம்",
+				"jurisdiction": "Jurisdiction",
+				"label": "சிட்டை",
+				"language": "மொழி",
+				"legalStatus": "சட்ட ரீதியான நிலை",
+				"legislativeBody": "சட்டமன்ற அமைப்பு",
+				"letterType": "வகை",
+				"libraryCatalog": "நூலக பட்டியல்",
+				"manuscriptType": "வகை",
+				"mapType": "வகை",
+				"medium": "சராசரி",
+				"meetingName": "கூட்டத்தின் பெயர்",
+				"meetingNumber": "Meeting No.",
+				"nameOfAct": "சட்டத்தின் பெயர்",
+				"network": "பிணையம்",
+				"newsCaseDate": "Case Date",
+				"number": "எண்",
+				"numberOfVolumes": "# தொகுதிகள்",
+				"numPages": "# பக்கங்கள்",
+				"openingDate": "Date Opened",
+				"opus": "Opus No.",
+				"organization": "அமைப்பு",
+				"originalDate": "Orig. Date",
+				"pages": "பக்கங்கள்",
+				"parentTreaty": "Parent Treaty",
+				"patentNumber": "காப்புரிமை எண்",
+				"place": "இடம்",
+				"postType": "இடுகை வகை",
+				"presentationType": "வகை",
+				"priorityDate": "Priority Date",
+				"priorityNumbers": "முன்னுரிமை எண்கள்",
+				"proceedingsTitle": "நடவடிக்கைகள் தலைப்பு",
+				"programmingLanguage": "நிரலாக்க மொழி",
+				"programTitle": "நிரல் தலைப்பு",
+				"publicationDate": "Date Published",
+				"publicationNumber": "Publication No.",
+				"publicationTitle": "வெளியீடு",
+				"publicLawNumber": "பொது சட்ட எண்",
+				"publisher": "பதிப்பகத்தார்",
+				"references": "குறிப்புகள்",
+				"regnalYear": "Regnal Year",
+				"regulationType": "Type",
+				"regulatoryBody": "Authority",
+				"reign": "Case Type",
+				"release": "Release",
+				"reporter": "நிருபர்",
+				"reporterVolume": "நிருபர் தொகுதி",
+				"reportNumber": "அறிக்கை எண்",
+				"reportType": "அறிக்கை வகை",
+				"repository": "களஞ்சியம்",
+				"repositoryLocation": "களஞ்சியம். இடம்",
+				"resolutionLabel": "Resol. Label",
+				"rights": "உரிமைகள்",
+				"runningTime": "இயங்கும் நேரம்",
+				"scale": "அளவு",
+				"section": "பிரிவு",
+				"series": "தொடர்",
+				"seriesNumber": "தொடர் எண்",
+				"seriesText": "தொடர் உரை",
+				"seriesTitle": "தொடர் தலைப்பு",
+				"session": "அமர்வு",
+				"sessionType": "Session Type",
+				"shortTitle": "குறுகிய தலைப்பு",
+				"signingDate": "Date Signed",
+				"status": "நிலை",
+				"studio": "கலைக்கூடம்",
+				"subject": "பொருள்",
+				"supplementName": "Supp. Name",
+				"system": "முறைமை",
+				"thesisType": "வகை",
+				"title": "தலைப்பு",
+				"treatyNumber": "Treaty Number",
+				"type": "வகை",
+				"university": "பல்கலைக்கழகம்",
+				"url": "முகவரி",
+				"versionNumber": "பதிப்பு",
+				"videoRecordingFormat": "வடிவம்",
+				"volume": "தொகுதி",
+				"volumeTitle": "Volume Title",
+				"websiteTitle": "வலைத்தள தலைப்பு",
+				"websiteType": "வலைத்தள வகை",
+				"yearAsVolume": "Year As Vol.",
+				"committeeFullname": "Committee"
+			},
+			"creatorTypes": {
+				"artist": "கலைஞர்",
+				"attorneyAgent": "வழக்கறிஞர்/முகவர்",
+				"author": "நூலாசிரியர்",
+				"bookAuthor": "புத்தக ஆசிரியர்",
+				"cartographer": "நிலப்படத்தாளர்",
+				"castMember": "நடிக உறுப்பினர்",
+				"commenter": "வர்ணனையாளர்",
+				"composer": "இசையமைப்பாளர்",
+				"contributor": "பங்களிப்பாளர்",
+				"cosponsor": "இணைபங்களிப்பாளர்",
+				"counsel": "அறிவுரை",
+				"director": "இயக்குனர்",
+				"editor": "திருத்தி",
+				"guest": "விருந்தினர்",
+				"interviewee": "உடன் நேர்காணல்",
+				"interviewer": "நேர்காணல் செய்பவர்",
+				"inventor": "கண்டுபிடிப்பாளர்",
+				"performer": "நடிகர்",
+				"podcaster": "வலையொளியாளர்",
+				"presenter": "தொகுப்பாளர்",
+				"producer": "தயாரிப்பாளர்",
+				"programmer": "நிரலர்",
+				"recipient": "பெறுநர்",
+				"reviewedAuthor": "மதிப்பாய்வு செய்த ஆசிரியர்",
+				"scriptwriter": "திரைக்கதை எழுத்தாளர்",
+				"seriesEditor": "தொடர் ஆசிரியர்",
+				"sponsor": "ஒப்புரவாளர்",
+				"testimonyBy": "Testimony By",
+				"translator": "மொழிபெயர்",
+				"wordsBy": "மூலம் சொற்கள்"
 			}
 		},
 		"th-TH": {

@@ -49,7 +49,8 @@ async function run() {
     // Remove baseField association from selected fields
     for (var itemTypeInfo of data.itemTypes) {
         for (var fieldInfo of itemTypeInfo.fields) {
-            if (["court", "legislativeBody", "issuingAuthority", "institution", "regulatoryBody", "documentNumber", "docketNumber"].indexOf(fieldInfo.field) > -1) {
+            // "docketNumber", "court", "legislativeBody", "issuingAuthority", "regulatoryBody", 
+            if (["documentNumber", "institution"].indexOf(fieldInfo.field) > -1) {
                 console.log("Removing baseField from \"" + fieldInfo.field + "\"");
                 delete fieldInfo.baseField;
             }
@@ -302,9 +303,9 @@ async function run() {
 			strings.set(key, str);
 		}
 		
-		data.locales[locale].itemTypes = getLocalizedStrings(strings, 'itemTypes', itemTypes);
-		data.locales[locale].fields = getLocalizedStrings(strings, 'itemFields', fields);
-		data.locales[locale].creatorTypes = getLocalizedStrings(strings, 'creatorTypes', creatorTypes);
+		data.locales[locale].itemTypes = getLocalizedStrings(locale, strings, 'itemTypes', itemTypes);
+		data.locales[locale].fields = getLocalizedStrings(locale, strings, 'itemFields', fields);
+		data.locales[locale].creatorTypes = getLocalizedStrings(locale, strings, 'creatorTypes', creatorTypes);
 	}
 	
 	// Write new file with adjusted version
@@ -320,7 +321,7 @@ async function run() {
 	}
 }
 
-function getLocalizedStrings(strings, prefix, subjects) {
+function getLocalizedStrings(locale, strings, prefix, subjects) {
 	var data = {};
 	for (let subject of subjects) {
 		let key = prefix + '.' + subject;
