@@ -1393,9 +1393,6 @@
     "document-name": [
       "documentName"
     ],
-    "publication-number": [
-      "documentNumber"
-    ],
     "admin-flag": [
       "adminFlag"
     ],
@@ -1431,7 +1428,8 @@
       "committee"
     ],
     "publication-number": [
-      "publicationNumber"
+        "publicationNumber",
+        "documentNumber"
     ],
     "event-title": [
       "resolutionLabel",

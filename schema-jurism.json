@@ -2881,15 +2881,6 @@
 					"field": "abstractNote"
 				},
 				{
-					"field": "number"
-				},
-				{
-					"field": "type"
-				},
-				{
-					"field": "status"
-				},
-				{
 					"field": "organization",
 					"baseField": "authority"
 				},
@@ -2897,37 +2888,34 @@
 					"field": "committee"
 				},
 				{
-					"field": "publisher"
+					"field": "type"
+				},
+				{
+					"field": "number"
 				},
 				{
 					"field": "versionNumber"
 				},
 				{
-					"field": "numPages"
+					"field": "status"
 				},
 				{
 					"field": "date"
 				},
 				{
+					"field": "publisher"
+				},
+				{
 					"field": "place"
-				},
-				{
-					"field": "jurisdiction"
-				},
-				{
-					"field": "language"
-				},
-				{
-					"field": "shortTitle"
 				},
 				{
 					"field": "DOI"
 				},
 				{
-					"field": "url"
+					"field": "citationKey"
 				},
 				{
-					"field": "citationKey"
+					"field": "url"
 				},
 				{
 					"field": "accessDate"
@@ -2937,6 +2925,18 @@
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "numPages"
+				},
+				{
+					"field": "jurisdiction"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -3774,7 +3774,8 @@
 					"documentName"
 				],
 				"publication-number": [
-					"publicationNumber"
+					"publicationNumber",
+                    "documentNumber"
 				],
 				"admin-flag": [
 					"adminFlag"
