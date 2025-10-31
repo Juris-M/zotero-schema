@@ -92,10 +92,6 @@
         "field": "resolutionLabel"
       },
       {
-        "field": "legislativeBody",
-        "baseField": "authority"
-      },
-      {
         "field": "assemblyNumber",
         "baseField": "seriesNumber"
       },
